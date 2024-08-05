@@ -13,6 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,6 +59,8 @@
     <Compile Include="Cambiar Contraseña.Designer.cs">
       <DependentUpon>Cambiar Contraseña.cs</DependentUpon>
     </Compile>
+    <Compile Include="CodeFile1.cs" />
+    <Compile Include="UtilidadesSQL\ConexionSQL.cs" />
     <Compile Include="GenericoBusqueda.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilidadesSQL\DatoSQL.cs" />
+    <Compile Include="UtilidadesSQL\LoginSQL.cs" />
+    <Compile Include="UtilidadesSQL\TipoDato.cs" />
     <EmbeddedResource Include="Cambiar Contraseña.resx">
       <DependentUpon>Cambiar Contraseña.cs</DependentUpon>
     </EmbeddedResource>

@@ -24,7 +24,7 @@ namespace ProyectoMatricula
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Login_Click(object sender, EventArgs e)
         {
             if (this.tbUser.Text == "userdba")
             {
