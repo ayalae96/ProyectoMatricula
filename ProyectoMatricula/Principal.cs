@@ -154,5 +154,10 @@ namespace ProyectoMatricula
             objForm.BringToFront();
             objForm.Show();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
