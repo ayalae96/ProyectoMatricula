@@ -92,6 +92,12 @@
             this.CerrarSesion = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -125,6 +131,9 @@
             this.panel9.SuspendLayout();
             this.pnlCambiarContra.SuspendLayout();
             this.CerrarSesion.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -666,10 +675,13 @@
             this.flAdministrativo.Controls.Add(this.pnlAsignarCupos);
             this.flAdministrativo.Controls.Add(this.pnlAsignarProfesor);
             this.flAdministrativo.Controls.Add(this.pnlEnrolaNuevosEs);
+            this.flAdministrativo.Controls.Add(this.panel5);
+            this.flAdministrativo.Controls.Add(this.panel6);
+            this.flAdministrativo.Controls.Add(this.panel7);
             this.flAdministrativo.Location = new System.Drawing.Point(0, 487);
             this.flAdministrativo.Margin = new System.Windows.Forms.Padding(0);
             this.flAdministrativo.Name = "flAdministrativo";
-            this.flAdministrativo.Size = new System.Drawing.Size(308, 366);
+            this.flAdministrativo.Size = new System.Drawing.Size(308, 498);
             this.flAdministrativo.TabIndex = 6;
             // 
             // panel10
@@ -888,7 +900,7 @@
             this.button17.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
             this.button17.Size = new System.Drawing.Size(360, 70);
             this.button17.TabIndex = 0;
-            this.button17.Text = "         Asignar Profesor";
+            this.button17.Text = "         Alumno";
             this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button17.UseVisualStyleBackColor = false;
             // 
@@ -910,7 +922,7 @@
             this.btnssad.ForeColor = System.Drawing.Color.White;
             this.btnssad.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
             this.btnssad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssad.Location = new System.Drawing.Point(-24, -15);
+            this.btnssad.Location = new System.Drawing.Point(-24, -10);
             this.btnssad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnssad.Name = "btnssad";
             this.btnssad.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
@@ -924,7 +936,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(0, 853);
+            this.panel9.Location = new System.Drawing.Point(0, 985);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(308, 41);
@@ -948,7 +960,7 @@
             // 
             this.pnlCambiarContra.BackColor = System.Drawing.Color.CadetBlue;
             this.pnlCambiarContra.Controls.Add(this.button19);
-            this.pnlCambiarContra.Location = new System.Drawing.Point(0, 894);
+            this.pnlCambiarContra.Location = new System.Drawing.Point(0, 1026);
             this.pnlCambiarContra.Margin = new System.Windows.Forms.Padding(0);
             this.pnlCambiarContra.Name = "pnlCambiarContra";
             this.pnlCambiarContra.Size = new System.Drawing.Size(308, 41);
@@ -978,7 +990,7 @@
             this.CerrarSesion.BackColor = System.Drawing.Color.DarkSlateGray;
             this.CerrarSesion.Controls.Add(this.label6);
             this.CerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CerrarSesion.Location = new System.Drawing.Point(0, 935);
+            this.CerrarSesion.Location = new System.Drawing.Point(0, 1067);
             this.CerrarSesion.Margin = new System.Windows.Forms.Padding(0);
             this.CerrarSesion.Name = "CerrarSesion";
             this.CerrarSesion.Size = new System.Drawing.Size(308, 41);
@@ -1011,6 +1023,90 @@
             this.panel3.Size = new System.Drawing.Size(1030, 699);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Location = new System.Drawing.Point(0, 369);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(308, 41);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel6.Controls.Add(this.button11);
+            this.panel6.Location = new System.Drawing.Point(0, 410);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(308, 41);
+            this.panel6.TabIndex = 22;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel7.Controls.Add(this.button12);
+            this.panel7.Location = new System.Drawing.Point(0, 451);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(308, 41);
+            this.panel7.TabIndex = 22;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.CadetBlue;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(-24, -10);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button8.Size = new System.Drawing.Size(360, 70);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "         Profesor";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.CadetBlue;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(-24, -14);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button11.Size = new System.Drawing.Size(360, 70);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "         Asignar Profesor";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.CadetBlue;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(-24, -14);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
+            this.button12.Name = "button12";
+            this.button12.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button12.Size = new System.Drawing.Size(360, 70);
+            this.button12.TabIndex = 3;
+            this.button12.Text = "         Matricula";
+            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.UseVisualStyleBackColor = false;
             // 
             // Principal
             // 
@@ -1068,6 +1164,9 @@
             this.pnlCambiarContra.ResumeLayout(false);
             this.CerrarSesion.ResumeLayout(false);
             this.CerrarSesion.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1138,6 +1237,12 @@
         private System.Windows.Forms.Button btnssad;
         private System.Windows.Forms.Panel pnlCambiarContra;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button12;
     }
 }
 
