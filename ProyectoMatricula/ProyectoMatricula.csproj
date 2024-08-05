@@ -53,13 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cambiar Contraseña.cs">
+    <Compile Include="CambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cambiar Contraseña.Designer.cs">
-      <DependentUpon>Cambiar Contraseña.cs</DependentUpon>
+    <Compile Include="CambiarContraseña.Designer.cs">
+      <DependentUpon>CambiarContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="CodeFile1.cs" />
+    <Compile Include="ConsultarPersonaExistente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPersonaExistente.Designer.cs">
+      <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreacionUsuario.Designer.cs">
+      <DependentUpon>CreacionUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="UtilidadesSQL\ConexionSQL.cs" />
     <Compile Include="GenericoBusqueda.cs">
       <SubType>UserControl</SubType>
@@ -88,10 +99,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UtilidadesSQL\DatoSQL.cs" />
+    <Compile Include="UtilidadesSQL\GestionUsuarioSQL.cs" />
     <Compile Include="UtilidadesSQL\LoginSQL.cs" />
     <Compile Include="UtilidadesSQL\TipoDato.cs" />
-    <EmbeddedResource Include="Cambiar Contraseña.resx">
-      <DependentUpon>Cambiar Contraseña.cs</DependentUpon>
+    <EmbeddedResource Include="CambiarContraseña.resx">
+      <DependentUpon>CambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPersonaExistente.resx">
+      <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenericoBusqueda.resx">
       <DependentUpon>GenericoBusqueda.cs</DependentUpon>

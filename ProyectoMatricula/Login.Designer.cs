@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tbUser = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbContrasena = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,14 +47,14 @@
             this.tbUser.TabIndex = 0;
             this.tbUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tbContrasena
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(81, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbContrasena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbContrasena.Location = new System.Drawing.Point(81, 95);
+            this.tbContrasena.Name = "tbContrasena";
+            this.tbContrasena.PasswordChar = '*';
+            this.tbContrasena.Size = new System.Drawing.Size(112, 20);
+            this.tbContrasena.TabIndex = 1;
             // 
             // label1
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbContrasena);
             this.Controls.Add(this.tbUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -143,7 +143,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox tbUser;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbContrasena;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
