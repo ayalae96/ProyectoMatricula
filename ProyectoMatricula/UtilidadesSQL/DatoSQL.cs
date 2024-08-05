@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoMatricula.UtilidadesSQL
 {
+
     public class DatoSQL
     {
         TipoDato tipoDato;
