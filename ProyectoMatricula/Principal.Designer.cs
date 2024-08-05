@@ -70,21 +70,21 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlAnularMatricula = new System.Windows.Forms.Panel();
-            this.btnwww = new System.Windows.Forms.Button();
+            this.btnAnularMat = new System.Windows.Forms.Button();
             this.pnlGenerarActas = new System.Windows.Forms.Panel();
-            this.btnssa = new System.Windows.Forms.Button();
+            this.bntGenerarAct = new System.Windows.Forms.Button();
             this.pnlGenerarActasNotas = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnGenerarActNot = new System.Windows.Forms.Button();
             this.pnlModificarNotas = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnModificarNot = new System.Windows.Forms.Button();
             this.pnlModificarAsistencia = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btnModificarAsist = new System.Windows.Forms.Button();
             this.pnlAsignarCupos = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnAsignarCup = new System.Windows.Forms.Button();
             this.pnlAsignarProfesor = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnAlumno = new System.Windows.Forms.Button();
             this.pnlEnrolaNuevosEs = new System.Windows.Forms.Panel();
-            this.btnssad = new System.Windows.Forms.Button();
+            this.btnEnrolarEst = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pnlCambiarContra = new System.Windows.Forms.Panel();
@@ -95,9 +95,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnProfesor = new System.Windows.Forms.Button();
+            this.btnAsignarProf = new System.Windows.Forms.Button();
+            this.btnMatricula = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -711,226 +711,226 @@
             // pnlAnularMatricula
             // 
             this.pnlAnularMatricula.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAnularMatricula.Controls.Add(this.btnwww);
+            this.pnlAnularMatricula.Controls.Add(this.btnAnularMat);
             this.pnlAnularMatricula.Location = new System.Drawing.Point(0, 41);
             this.pnlAnularMatricula.Margin = new System.Windows.Forms.Padding(0);
             this.pnlAnularMatricula.Name = "pnlAnularMatricula";
             this.pnlAnularMatricula.Size = new System.Drawing.Size(308, 41);
             this.pnlAnularMatricula.TabIndex = 13;
             // 
-            // btnwww
+            // btnAnularMat
             // 
-            this.btnwww.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnwww.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnwww.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnwww.ForeColor = System.Drawing.Color.White;
-            this.btnwww.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.btnwww.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnwww.Location = new System.Drawing.Point(-24, -15);
-            this.btnwww.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnwww.Name = "btnwww";
-            this.btnwww.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.btnwww.Size = new System.Drawing.Size(360, 70);
-            this.btnwww.TabIndex = 0;
-            this.btnwww.Text = "         Anular Matricula";
-            this.btnwww.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnwww.UseVisualStyleBackColor = false;
+            this.btnAnularMat.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAnularMat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularMat.ForeColor = System.Drawing.Color.White;
+            this.btnAnularMat.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAnularMat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnularMat.Location = new System.Drawing.Point(-24, -15);
+            this.btnAnularMat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnularMat.Name = "btnAnularMat";
+            this.btnAnularMat.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAnularMat.Size = new System.Drawing.Size(360, 70);
+            this.btnAnularMat.TabIndex = 0;
+            this.btnAnularMat.Text = "         Anular Matricula";
+            this.btnAnularMat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnularMat.UseVisualStyleBackColor = false;
             // 
             // pnlGenerarActas
             // 
             this.pnlGenerarActas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlGenerarActas.Controls.Add(this.btnssa);
+            this.pnlGenerarActas.Controls.Add(this.bntGenerarAct);
             this.pnlGenerarActas.Location = new System.Drawing.Point(0, 82);
             this.pnlGenerarActas.Margin = new System.Windows.Forms.Padding(0);
             this.pnlGenerarActas.Name = "pnlGenerarActas";
             this.pnlGenerarActas.Size = new System.Drawing.Size(308, 41);
             this.pnlGenerarActas.TabIndex = 14;
             // 
-            // btnssa
+            // bntGenerarAct
             // 
-            this.btnssa.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnssa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnssa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnssa.ForeColor = System.Drawing.Color.White;
-            this.btnssa.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.btnssa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssa.Location = new System.Drawing.Point(-24, -15);
-            this.btnssa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnssa.Name = "btnssa";
-            this.btnssa.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.btnssa.Size = new System.Drawing.Size(360, 70);
-            this.btnssa.TabIndex = 0;
-            this.btnssa.Text = "         Generar Actas";
-            this.btnssa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssa.UseVisualStyleBackColor = false;
+            this.bntGenerarAct.BackColor = System.Drawing.Color.CadetBlue;
+            this.bntGenerarAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntGenerarAct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntGenerarAct.ForeColor = System.Drawing.Color.White;
+            this.bntGenerarAct.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.bntGenerarAct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntGenerarAct.Location = new System.Drawing.Point(-24, -15);
+            this.bntGenerarAct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bntGenerarAct.Name = "bntGenerarAct";
+            this.bntGenerarAct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.bntGenerarAct.Size = new System.Drawing.Size(360, 70);
+            this.bntGenerarAct.TabIndex = 0;
+            this.bntGenerarAct.Text = "         Generar Actas";
+            this.bntGenerarAct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntGenerarAct.UseVisualStyleBackColor = false;
             // 
             // pnlGenerarActasNotas
             // 
             this.pnlGenerarActasNotas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlGenerarActasNotas.Controls.Add(this.button13);
+            this.pnlGenerarActasNotas.Controls.Add(this.btnGenerarActNot);
             this.pnlGenerarActasNotas.Location = new System.Drawing.Point(0, 123);
             this.pnlGenerarActasNotas.Margin = new System.Windows.Forms.Padding(0);
             this.pnlGenerarActasNotas.Name = "pnlGenerarActasNotas";
             this.pnlGenerarActasNotas.Size = new System.Drawing.Size(308, 41);
             this.pnlGenerarActasNotas.TabIndex = 15;
             // 
-            // button13
+            // btnGenerarActNot
             // 
-            this.button13.BackColor = System.Drawing.Color.CadetBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(-24, -15);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(360, 70);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "         Generar Actas Notas";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnGenerarActNot.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnGenerarActNot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarActNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarActNot.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarActNot.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnGenerarActNot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarActNot.Location = new System.Drawing.Point(-24, -15);
+            this.btnGenerarActNot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGenerarActNot.Name = "btnGenerarActNot";
+            this.btnGenerarActNot.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnGenerarActNot.Size = new System.Drawing.Size(360, 70);
+            this.btnGenerarActNot.TabIndex = 0;
+            this.btnGenerarActNot.Text = "         Generar Actas Notas";
+            this.btnGenerarActNot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarActNot.UseVisualStyleBackColor = false;
             // 
             // pnlModificarNotas
             // 
             this.pnlModificarNotas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlModificarNotas.Controls.Add(this.button14);
+            this.pnlModificarNotas.Controls.Add(this.btnModificarNot);
             this.pnlModificarNotas.Location = new System.Drawing.Point(0, 164);
             this.pnlModificarNotas.Margin = new System.Windows.Forms.Padding(0);
             this.pnlModificarNotas.Name = "pnlModificarNotas";
             this.pnlModificarNotas.Size = new System.Drawing.Size(308, 41);
             this.pnlModificarNotas.TabIndex = 16;
             // 
-            // button14
+            // btnModificarNot
             // 
-            this.button14.BackColor = System.Drawing.Color.CadetBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(-24, -15);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(360, 70);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "         Moficar Notas";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnModificarNot.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnModificarNot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarNot.ForeColor = System.Drawing.Color.White;
+            this.btnModificarNot.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnModificarNot.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarNot.Location = new System.Drawing.Point(-24, -15);
+            this.btnModificarNot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificarNot.Name = "btnModificarNot";
+            this.btnModificarNot.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModificarNot.Size = new System.Drawing.Size(360, 70);
+            this.btnModificarNot.TabIndex = 0;
+            this.btnModificarNot.Text = "         Moficar Notas";
+            this.btnModificarNot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarNot.UseVisualStyleBackColor = false;
             // 
             // pnlModificarAsistencia
             // 
             this.pnlModificarAsistencia.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlModificarAsistencia.Controls.Add(this.button15);
+            this.pnlModificarAsistencia.Controls.Add(this.btnModificarAsist);
             this.pnlModificarAsistencia.Location = new System.Drawing.Point(0, 205);
             this.pnlModificarAsistencia.Margin = new System.Windows.Forms.Padding(0);
             this.pnlModificarAsistencia.Name = "pnlModificarAsistencia";
             this.pnlModificarAsistencia.Size = new System.Drawing.Size(308, 41);
             this.pnlModificarAsistencia.TabIndex = 17;
             // 
-            // button15
+            // btnModificarAsist
             // 
-            this.button15.BackColor = System.Drawing.Color.CadetBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(-24, -15);
-            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(360, 70);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "         Modificar Asistencias";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnModificarAsist.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnModificarAsist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarAsist.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarAsist.ForeColor = System.Drawing.Color.White;
+            this.btnModificarAsist.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnModificarAsist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarAsist.Location = new System.Drawing.Point(-24, -15);
+            this.btnModificarAsist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificarAsist.Name = "btnModificarAsist";
+            this.btnModificarAsist.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModificarAsist.Size = new System.Drawing.Size(360, 70);
+            this.btnModificarAsist.TabIndex = 0;
+            this.btnModificarAsist.Text = "         Modificar Asistencias";
+            this.btnModificarAsist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarAsist.UseVisualStyleBackColor = false;
             // 
             // pnlAsignarCupos
             // 
             this.pnlAsignarCupos.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAsignarCupos.Controls.Add(this.button16);
+            this.pnlAsignarCupos.Controls.Add(this.btnAsignarCup);
             this.pnlAsignarCupos.Location = new System.Drawing.Point(0, 246);
             this.pnlAsignarCupos.Margin = new System.Windows.Forms.Padding(0);
             this.pnlAsignarCupos.Name = "pnlAsignarCupos";
             this.pnlAsignarCupos.Size = new System.Drawing.Size(308, 41);
             this.pnlAsignarCupos.TabIndex = 18;
             // 
-            // button16
+            // btnAsignarCup
             // 
-            this.button16.BackColor = System.Drawing.Color.CadetBlue;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(-24, -15);
-            this.button16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(360, 70);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "         Asignar Cupos";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnAsignarCup.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAsignarCup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsignarCup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignarCup.ForeColor = System.Drawing.Color.White;
+            this.btnAsignarCup.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAsignarCup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsignarCup.Location = new System.Drawing.Point(-24, -15);
+            this.btnAsignarCup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAsignarCup.Name = "btnAsignarCup";
+            this.btnAsignarCup.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAsignarCup.Size = new System.Drawing.Size(360, 70);
+            this.btnAsignarCup.TabIndex = 0;
+            this.btnAsignarCup.Text = "         Asignar Cupos";
+            this.btnAsignarCup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsignarCup.UseVisualStyleBackColor = false;
             // 
             // pnlAsignarProfesor
             // 
             this.pnlAsignarProfesor.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAsignarProfesor.Controls.Add(this.button17);
+            this.pnlAsignarProfesor.Controls.Add(this.btnAlumno);
             this.pnlAsignarProfesor.Location = new System.Drawing.Point(0, 287);
             this.pnlAsignarProfesor.Margin = new System.Windows.Forms.Padding(0);
             this.pnlAsignarProfesor.Name = "pnlAsignarProfesor";
             this.pnlAsignarProfesor.Size = new System.Drawing.Size(308, 41);
             this.pnlAsignarProfesor.TabIndex = 19;
             // 
-            // button17
+            // btnAlumno
             // 
-            this.button17.BackColor = System.Drawing.Color.CadetBlue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(-24, -15);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(360, 70);
-            this.button17.TabIndex = 0;
-            this.button17.Text = "         Alumno";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnAlumno.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAlumno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlumno.ForeColor = System.Drawing.Color.White;
+            this.btnAlumno.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlumno.Location = new System.Drawing.Point(-24, -15);
+            this.btnAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAlumno.Name = "btnAlumno";
+            this.btnAlumno.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAlumno.Size = new System.Drawing.Size(360, 70);
+            this.btnAlumno.TabIndex = 0;
+            this.btnAlumno.Text = "         Alumno";
+            this.btnAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlumno.UseVisualStyleBackColor = false;
             // 
             // pnlEnrolaNuevosEs
             // 
             this.pnlEnrolaNuevosEs.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlEnrolaNuevosEs.Controls.Add(this.btnssad);
+            this.pnlEnrolaNuevosEs.Controls.Add(this.btnEnrolarEst);
             this.pnlEnrolaNuevosEs.Location = new System.Drawing.Point(0, 328);
             this.pnlEnrolaNuevosEs.Margin = new System.Windows.Forms.Padding(0);
             this.pnlEnrolaNuevosEs.Name = "pnlEnrolaNuevosEs";
             this.pnlEnrolaNuevosEs.Size = new System.Drawing.Size(308, 41);
             this.pnlEnrolaNuevosEs.TabIndex = 20;
             // 
-            // btnssad
+            // btnEnrolarEst
             // 
-            this.btnssad.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnssad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnssad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnssad.ForeColor = System.Drawing.Color.White;
-            this.btnssad.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.btnssad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssad.Location = new System.Drawing.Point(-24, -10);
-            this.btnssad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnssad.Name = "btnssad";
-            this.btnssad.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.btnssad.Size = new System.Drawing.Size(360, 70);
-            this.btnssad.TabIndex = 0;
-            this.btnssad.Text = "         Enrolar Nuevos Estudiantes";
-            this.btnssad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssad.UseVisualStyleBackColor = false;
+            this.btnEnrolarEst.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnEnrolarEst.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnrolarEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnrolarEst.ForeColor = System.Drawing.Color.White;
+            this.btnEnrolarEst.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnEnrolarEst.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrolarEst.Location = new System.Drawing.Point(-24, -10);
+            this.btnEnrolarEst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnrolarEst.Name = "btnEnrolarEst";
+            this.btnEnrolarEst.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnEnrolarEst.Size = new System.Drawing.Size(360, 70);
+            this.btnEnrolarEst.TabIndex = 0;
+            this.btnEnrolarEst.Text = "         Enrolar Nuevos Estudiantes";
+            this.btnEnrolarEst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrolarEst.UseVisualStyleBackColor = false;
             // 
             // panel9
             // 
@@ -1027,7 +1027,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel5.Controls.Add(this.button8);
+            this.panel5.Controls.Add(this.btnProfesor);
             this.panel5.Location = new System.Drawing.Point(0, 369);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
@@ -1037,7 +1037,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel6.Controls.Add(this.button11);
+            this.panel6.Controls.Add(this.btnAsignarProf);
             this.panel6.Location = new System.Drawing.Point(0, 410);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
@@ -1047,66 +1047,67 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel7.Controls.Add(this.button12);
+            this.panel7.Controls.Add(this.btnMatricula);
             this.panel7.Location = new System.Drawing.Point(0, 451);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(308, 41);
             this.panel7.TabIndex = 22;
             // 
-            // button8
+            // btnProfesor
             // 
-            this.button8.BackColor = System.Drawing.Color.CadetBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(-24, -10);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(360, 70);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "         Profesor";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnProfesor.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesor.ForeColor = System.Drawing.Color.White;
+            this.btnProfesor.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnProfesor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfesor.Location = new System.Drawing.Point(-24, -10);
+            this.btnProfesor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProfesor.Name = "btnProfesor";
+            this.btnProfesor.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnProfesor.Size = new System.Drawing.Size(360, 70);
+            this.btnProfesor.TabIndex = 1;
+            this.btnProfesor.Text = "         Profesor";
+            this.btnProfesor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfesor.UseVisualStyleBackColor = false;
+            this.btnProfesor.Click += new System.EventHandler(this.btnProfesor_Click);
             // 
-            // button11
+            // btnAsignarProf
             // 
-            this.button11.BackColor = System.Drawing.Color.CadetBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(-24, -14);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(360, 70);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "         Asignar Profesor";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnAsignarProf.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAsignarProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsignarProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignarProf.ForeColor = System.Drawing.Color.White;
+            this.btnAsignarProf.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAsignarProf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsignarProf.Location = new System.Drawing.Point(-24, -14);
+            this.btnAsignarProf.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAsignarProf.Name = "btnAsignarProf";
+            this.btnAsignarProf.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAsignarProf.Size = new System.Drawing.Size(360, 70);
+            this.btnAsignarProf.TabIndex = 2;
+            this.btnAsignarProf.Text = "         Asignar Profesor";
+            this.btnAsignarProf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsignarProf.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnMatricula
             // 
-            this.button12.BackColor = System.Drawing.Color.CadetBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(-24, -14);
-            this.button12.Margin = new System.Windows.Forms.Padding(4);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(360, 70);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "         Matricula";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnMatricula.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnMatricula.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnMatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatricula.Location = new System.Drawing.Point(-24, -14);
+            this.btnMatricula.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMatricula.Name = "btnMatricula";
+            this.btnMatricula.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnMatricula.Size = new System.Drawing.Size(360, 70);
+            this.btnMatricula.TabIndex = 3;
+            this.btnMatricula.Text = "         Matricula";
+            this.btnMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatricula.UseVisualStyleBackColor = false;
             // 
             // Principal
             // 
@@ -1220,29 +1221,29 @@
         private System.Windows.Forms.Panel pnlAsignarRol;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel pnlAnularMatricula;
-        private System.Windows.Forms.Button btnwww;
+        private System.Windows.Forms.Button btnAnularMat;
         private System.Windows.Forms.Panel pnlGenerarActas;
-        private System.Windows.Forms.Button btnssa;
+        private System.Windows.Forms.Button bntGenerarAct;
         private System.Windows.Forms.Panel pnlGenerarActasNotas;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnGenerarActNot;
         private System.Windows.Forms.Panel pnlModificarNotas;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnModificarNot;
         private System.Windows.Forms.Panel pnlModificarAsistencia;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnModificarAsist;
         private System.Windows.Forms.Panel pnlAsignarCupos;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnAsignarCup;
         private System.Windows.Forms.Panel pnlAsignarProfesor;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnAlumno;
         private System.Windows.Forms.Panel pnlEnrolaNuevosEs;
-        private System.Windows.Forms.Button btnssad;
+        private System.Windows.Forms.Button btnEnrolarEst;
         private System.Windows.Forms.Panel pnlCambiarContra;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnProfesor;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnAsignarProf;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnMatricula;
     }
 }
 

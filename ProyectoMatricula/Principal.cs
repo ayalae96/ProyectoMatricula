@@ -154,5 +154,10 @@ namespace ProyectoMatricula
             objForm.BringToFront();
             objForm.Show();
         }
+
+        private void btnProfesor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
