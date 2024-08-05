@@ -35,64 +35,70 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblRol = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flAcademico = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlAcademico = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.pnlConsultarNota = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlConsultarAsis = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.pnlConsultarHorario = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.pnlRegistroAsist = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.pnlRegistrarNota = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.pnlGenerarMalla = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.pnlGenerarHorarios = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.flDataBase = new System.Windows.Forms.FlowLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.pnlGestionUsuarios = new System.Windows.Forms.Panel();
-            this.btnGestionUsuarios = new System.Windows.Forms.Button();
             this.pnlLogs = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
             this.pnlAsignarRol = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
             this.flAdministrativo = new System.Windows.Forms.FlowLayoutPanel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.pnlAnularMatricula = new System.Windows.Forms.Panel();
-            this.btnwww = new System.Windows.Forms.Button();
             this.pnlGenerarActas = new System.Windows.Forms.Panel();
-            this.btnssa = new System.Windows.Forms.Button();
             this.pnlGenerarActasNotas = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
             this.pnlModificarNotas = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
             this.pnlModificarAsistencia = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
             this.pnlAsignarCupos = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
             this.pnlAsignarProfesor = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
             this.pnlEnrolaNuevosEs = new System.Windows.Forms.Panel();
-            this.btnssad = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.pnlCambiarContra = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
             this.CerrarSesion = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnGestionUsuarios = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnAnularMatricula = new System.Windows.Forms.Button();
+            this.btnGenerarActas = new System.Windows.Forms.Button();
+            this.btnGenrarActNotas = new System.Windows.Forms.Button();
+            this.btnModificarNotas = new System.Windows.Forms.Button();
+            this.btnModAsistencia = new System.Windows.Forms.Button();
+            this.btnAsigCupos = new System.Windows.Forms.Button();
+            this.btnAsigProfesor = new System.Windows.Forms.Button();
+            this.btnssad = new System.Windows.Forms.Button();
+            this.btnEstudiante = new System.Windows.Forms.Button();
+            this.btnMatricula = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnProfesor = new System.Windows.Forms.Button();
+            this.pnlFrmPrincipal = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pnlPrincipalFRM = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -126,12 +132,15 @@
             this.panel9.SuspendLayout();
             this.pnlCambiarContra.SuspendLayout();
             this.CerrarSesion.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel1.Controls.Add(this.pnlFrmPrincipal);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.metroControlBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -236,19 +245,6 @@
             this.lblUser.Text = "[USERNAME]";
             this.lblUser.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = global::ProyectoMatricula.Properties.Resources.person_20dp_FILL0_wght400_GRAD0_opsz20__ss1_;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(4, 11);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "      Usuario:";
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.lblRol);
@@ -327,20 +323,6 @@
             this.pnlAcademico.Size = new System.Drawing.Size(308, 41);
             this.pnlAcademico.TabIndex = 4;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = global::ProyectoMatricula.Properties.Resources.school_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(3, 7);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 25);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "       Academico";
-            // 
             // pnlConsultarNota
             // 
             this.pnlConsultarNota.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -350,24 +332,6 @@
             this.pnlConsultarNota.Name = "pnlConsultarNota";
             this.pnlConsultarNota.Size = new System.Drawing.Size(308, 41);
             this.pnlConsultarNota.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-24, -15);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(360, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "         Consultar Nota";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // pnlConsultarAsis
             // 
@@ -379,24 +343,6 @@
             this.pnlConsultarAsis.Size = new System.Drawing.Size(308, 41);
             this.pnlConsultarAsis.TabIndex = 6;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.CadetBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-24, -15);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(360, 70);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "         Consultar Asistencia";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // pnlConsultarHorario
             // 
             this.pnlConsultarHorario.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -406,24 +352,6 @@
             this.pnlConsultarHorario.Name = "pnlConsultarHorario";
             this.pnlConsultarHorario.Size = new System.Drawing.Size(308, 41);
             this.pnlConsultarHorario.TabIndex = 8;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.CadetBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-24, -15);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(360, 70);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "         Consultar Horario";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // pnlRegistroAsist
             // 
@@ -435,24 +363,6 @@
             this.pnlRegistroAsist.Size = new System.Drawing.Size(308, 41);
             this.pnlRegistroAsist.TabIndex = 9;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.CadetBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-24, -15);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(360, 70);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "         Registro Asistencia";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // pnlRegistrarNota
             // 
             this.pnlRegistrarNota.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -462,24 +372,6 @@
             this.pnlRegistrarNota.Name = "pnlRegistrarNota";
             this.pnlRegistrarNota.Size = new System.Drawing.Size(308, 41);
             this.pnlRegistrarNota.TabIndex = 10;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.CadetBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-24, -15);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(360, 70);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "         Registrar Nota";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // pnlGenerarMalla
             // 
@@ -491,24 +383,6 @@
             this.pnlGenerarMalla.Size = new System.Drawing.Size(308, 41);
             this.pnlGenerarMalla.TabIndex = 11;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.CadetBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-24, -15);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(360, 70);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "         Generar Malla";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // pnlGenerarHorarios
             // 
             this.pnlGenerarHorarios.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -518,24 +392,6 @@
             this.pnlGenerarHorarios.Name = "pnlGenerarHorarios";
             this.pnlGenerarHorarios.Size = new System.Drawing.Size(308, 41);
             this.pnlGenerarHorarios.TabIndex = 12;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.CadetBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(-24, -15);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(360, 70);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "         Generar Horarios";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
             // 
             // flDataBase
             // 
@@ -559,6 +415,361 @@
             this.panel11.Size = new System.Drawing.Size(308, 41);
             this.panel11.TabIndex = 5;
             // 
+            // pnlGestionUsuarios
+            // 
+            this.pnlGestionUsuarios.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlGestionUsuarios.Controls.Add(this.btnGestionUsuarios);
+            this.pnlGestionUsuarios.Location = new System.Drawing.Point(0, 41);
+            this.pnlGestionUsuarios.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlGestionUsuarios.Name = "pnlGestionUsuarios";
+            this.pnlGestionUsuarios.Size = new System.Drawing.Size(308, 41);
+            this.pnlGestionUsuarios.TabIndex = 13;
+            // 
+            // pnlLogs
+            // 
+            this.pnlLogs.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlLogs.Controls.Add(this.button9);
+            this.pnlLogs.Location = new System.Drawing.Point(0, 82);
+            this.pnlLogs.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlLogs.Name = "pnlLogs";
+            this.pnlLogs.Size = new System.Drawing.Size(308, 41);
+            this.pnlLogs.TabIndex = 14;
+            // 
+            // pnlAsignarRol
+            // 
+            this.pnlAsignarRol.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAsignarRol.Controls.Add(this.button10);
+            this.pnlAsignarRol.Location = new System.Drawing.Point(0, 123);
+            this.pnlAsignarRol.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAsignarRol.Name = "pnlAsignarRol";
+            this.pnlAsignarRol.Size = new System.Drawing.Size(308, 41);
+            this.pnlAsignarRol.TabIndex = 15;
+            // 
+            // flAdministrativo
+            // 
+            this.flAdministrativo.Controls.Add(this.panel10);
+            this.flAdministrativo.Controls.Add(this.pnlAnularMatricula);
+            this.flAdministrativo.Controls.Add(this.pnlGenerarActas);
+            this.flAdministrativo.Controls.Add(this.pnlGenerarActasNotas);
+            this.flAdministrativo.Controls.Add(this.pnlModificarNotas);
+            this.flAdministrativo.Controls.Add(this.pnlModificarAsistencia);
+            this.flAdministrativo.Controls.Add(this.pnlAsignarCupos);
+            this.flAdministrativo.Controls.Add(this.pnlAsignarProfesor);
+            this.flAdministrativo.Controls.Add(this.pnlEnrolaNuevosEs);
+            this.flAdministrativo.Controls.Add(this.panel6);
+            this.flAdministrativo.Controls.Add(this.panel5);
+            this.flAdministrativo.Controls.Add(this.panel7);
+            this.flAdministrativo.Location = new System.Drawing.Point(0, 487);
+            this.flAdministrativo.Margin = new System.Windows.Forms.Padding(0);
+            this.flAdministrativo.Name = "flAdministrativo";
+            this.flAdministrativo.Size = new System.Drawing.Size(308, 494);
+            this.flAdministrativo.TabIndex = 6;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel10.Controls.Add(this.label10);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(308, 41);
+            this.panel10.TabIndex = 5;
+            // 
+            // pnlAnularMatricula
+            // 
+            this.pnlAnularMatricula.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAnularMatricula.Controls.Add(this.btnAnularMatricula);
+            this.pnlAnularMatricula.Location = new System.Drawing.Point(0, 41);
+            this.pnlAnularMatricula.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAnularMatricula.Name = "pnlAnularMatricula";
+            this.pnlAnularMatricula.Size = new System.Drawing.Size(308, 41);
+            this.pnlAnularMatricula.TabIndex = 13;
+            // 
+            // pnlGenerarActas
+            // 
+            this.pnlGenerarActas.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlGenerarActas.Controls.Add(this.btnGenerarActas);
+            this.pnlGenerarActas.Location = new System.Drawing.Point(0, 82);
+            this.pnlGenerarActas.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlGenerarActas.Name = "pnlGenerarActas";
+            this.pnlGenerarActas.Size = new System.Drawing.Size(308, 41);
+            this.pnlGenerarActas.TabIndex = 14;
+            // 
+            // pnlGenerarActasNotas
+            // 
+            this.pnlGenerarActasNotas.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlGenerarActasNotas.Controls.Add(this.btnGenrarActNotas);
+            this.pnlGenerarActasNotas.Location = new System.Drawing.Point(0, 123);
+            this.pnlGenerarActasNotas.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlGenerarActasNotas.Name = "pnlGenerarActasNotas";
+            this.pnlGenerarActasNotas.Size = new System.Drawing.Size(308, 41);
+            this.pnlGenerarActasNotas.TabIndex = 15;
+            // 
+            // pnlModificarNotas
+            // 
+            this.pnlModificarNotas.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlModificarNotas.Controls.Add(this.btnModificarNotas);
+            this.pnlModificarNotas.Location = new System.Drawing.Point(0, 164);
+            this.pnlModificarNotas.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlModificarNotas.Name = "pnlModificarNotas";
+            this.pnlModificarNotas.Size = new System.Drawing.Size(308, 41);
+            this.pnlModificarNotas.TabIndex = 16;
+            // 
+            // pnlModificarAsistencia
+            // 
+            this.pnlModificarAsistencia.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlModificarAsistencia.Controls.Add(this.btnModAsistencia);
+            this.pnlModificarAsistencia.Location = new System.Drawing.Point(0, 205);
+            this.pnlModificarAsistencia.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlModificarAsistencia.Name = "pnlModificarAsistencia";
+            this.pnlModificarAsistencia.Size = new System.Drawing.Size(308, 41);
+            this.pnlModificarAsistencia.TabIndex = 17;
+            // 
+            // pnlAsignarCupos
+            // 
+            this.pnlAsignarCupos.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAsignarCupos.Controls.Add(this.btnAsigCupos);
+            this.pnlAsignarCupos.Location = new System.Drawing.Point(0, 246);
+            this.pnlAsignarCupos.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAsignarCupos.Name = "pnlAsignarCupos";
+            this.pnlAsignarCupos.Size = new System.Drawing.Size(308, 41);
+            this.pnlAsignarCupos.TabIndex = 18;
+            // 
+            // pnlAsignarProfesor
+            // 
+            this.pnlAsignarProfesor.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlAsignarProfesor.Controls.Add(this.btnAsigProfesor);
+            this.pnlAsignarProfesor.Location = new System.Drawing.Point(0, 287);
+            this.pnlAsignarProfesor.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAsignarProfesor.Name = "pnlAsignarProfesor";
+            this.pnlAsignarProfesor.Size = new System.Drawing.Size(308, 41);
+            this.pnlAsignarProfesor.TabIndex = 19;
+            // 
+            // pnlEnrolaNuevosEs
+            // 
+            this.pnlEnrolaNuevosEs.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlEnrolaNuevosEs.Controls.Add(this.btnssad);
+            this.pnlEnrolaNuevosEs.Location = new System.Drawing.Point(0, 328);
+            this.pnlEnrolaNuevosEs.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlEnrolaNuevosEs.Name = "pnlEnrolaNuevosEs";
+            this.pnlEnrolaNuevosEs.Size = new System.Drawing.Size(308, 41);
+            this.pnlEnrolaNuevosEs.TabIndex = 20;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.Location = new System.Drawing.Point(0, 981);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(308, 41);
+            this.panel9.TabIndex = 5;
+            // 
+            // pnlCambiarContra
+            // 
+            this.pnlCambiarContra.BackColor = System.Drawing.Color.CadetBlue;
+            this.pnlCambiarContra.Controls.Add(this.button19);
+            this.pnlCambiarContra.Location = new System.Drawing.Point(0, 1022);
+            this.pnlCambiarContra.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlCambiarContra.Name = "pnlCambiarContra";
+            this.pnlCambiarContra.Size = new System.Drawing.Size(308, 41);
+            this.pnlCambiarContra.TabIndex = 11;
+            // 
+            // CerrarSesion
+            // 
+            this.CerrarSesion.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.CerrarSesion.Controls.Add(this.label6);
+            this.CerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CerrarSesion.Location = new System.Drawing.Point(0, 1063);
+            this.CerrarSesion.Margin = new System.Windows.Forms.Padding(0);
+            this.CerrarSesion.Name = "CerrarSesion";
+            this.CerrarSesion.Size = new System.Drawing.Size(308, 41);
+            this.CerrarSesion.TabIndex = 5;
+            this.CerrarSesion.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel5.Controls.Add(this.btnEstudiante);
+            this.panel5.Location = new System.Drawing.Point(0, 410);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(308, 41);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel6.Controls.Add(this.btnProfesor);
+            this.panel6.Location = new System.Drawing.Point(0, 369);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(308, 41);
+            this.panel6.TabIndex = 22;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel7.Controls.Add(this.btnMatricula);
+            this.panel7.Location = new System.Drawing.Point(0, 451);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(308, 41);
+            this.panel7.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = global::ProyectoMatricula.Properties.Resources.person_20dp_FILL0_wght400_GRAD0_opsz20__ss1_;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(4, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "      Usuario:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Image = global::ProyectoMatricula.Properties.Resources.school_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(3, 7);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "       Academico";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-24, -15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(360, 70);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "         Consultar Nota";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.CadetBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-24, -15);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(360, 70);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "         Consultar Asistencia";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.CadetBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-24, -15);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(360, 70);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "         Consultar Horario";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.CadetBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(-24, -15);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(360, 70);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "         Registro Asistencia";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.CadetBlue;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(-24, -15);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(360, 70);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "         Registrar Nota";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.CadetBlue;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(-24, -15);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(360, 70);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "         Generar Malla";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.CadetBlue;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-24, -15);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(360, 70);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "         Generar Horarios";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -572,16 +783,6 @@
             this.label11.Size = new System.Drawing.Size(148, 25);
             this.label11.TabIndex = 0;
             this.label11.Text = "       DataBase";
-            // 
-            // pnlGestionUsuarios
-            // 
-            this.pnlGestionUsuarios.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlGestionUsuarios.Controls.Add(this.btnGestionUsuarios);
-            this.pnlGestionUsuarios.Location = new System.Drawing.Point(0, 41);
-            this.pnlGestionUsuarios.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlGestionUsuarios.Name = "pnlGestionUsuarios";
-            this.pnlGestionUsuarios.Size = new System.Drawing.Size(308, 41);
-            this.pnlGestionUsuarios.TabIndex = 13;
             // 
             // btnGestionUsuarios
             // 
@@ -601,16 +802,6 @@
             this.btnGestionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGestionUsuarios.UseVisualStyleBackColor = false;
             // 
-            // pnlLogs
-            // 
-            this.pnlLogs.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlLogs.Controls.Add(this.button9);
-            this.pnlLogs.Location = new System.Drawing.Point(0, 82);
-            this.pnlLogs.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlLogs.Name = "pnlLogs";
-            this.pnlLogs.Size = new System.Drawing.Size(308, 41);
-            this.pnlLogs.TabIndex = 14;
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.CadetBlue;
@@ -628,16 +819,6 @@
             this.button9.Text = "         Logs";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // pnlAsignarRol
-            // 
-            this.pnlAsignarRol.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAsignarRol.Controls.Add(this.button10);
-            this.pnlAsignarRol.Location = new System.Drawing.Point(0, 123);
-            this.pnlAsignarRol.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAsignarRol.Name = "pnlAsignarRol";
-            this.pnlAsignarRol.Size = new System.Drawing.Size(308, 41);
-            this.pnlAsignarRol.TabIndex = 15;
             // 
             // button10
             // 
@@ -657,33 +838,6 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // flAdministrativo
-            // 
-            this.flAdministrativo.Controls.Add(this.panel10);
-            this.flAdministrativo.Controls.Add(this.pnlAnularMatricula);
-            this.flAdministrativo.Controls.Add(this.pnlGenerarActas);
-            this.flAdministrativo.Controls.Add(this.pnlGenerarActasNotas);
-            this.flAdministrativo.Controls.Add(this.pnlModificarNotas);
-            this.flAdministrativo.Controls.Add(this.pnlModificarAsistencia);
-            this.flAdministrativo.Controls.Add(this.pnlAsignarCupos);
-            this.flAdministrativo.Controls.Add(this.pnlAsignarProfesor);
-            this.flAdministrativo.Controls.Add(this.pnlEnrolaNuevosEs);
-            this.flAdministrativo.Location = new System.Drawing.Point(0, 487);
-            this.flAdministrativo.Margin = new System.Windows.Forms.Padding(0);
-            this.flAdministrativo.Name = "flAdministrativo";
-            this.flAdministrativo.Size = new System.Drawing.Size(308, 366);
-            this.flAdministrativo.TabIndex = 6;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(308, 41);
-            this.panel10.TabIndex = 5;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -698,211 +852,131 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "       Administrativo";
             // 
-            // pnlAnularMatricula
+            // btnAnularMatricula
             // 
-            this.pnlAnularMatricula.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAnularMatricula.Controls.Add(this.btnwww);
-            this.pnlAnularMatricula.Location = new System.Drawing.Point(0, 41);
-            this.pnlAnularMatricula.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAnularMatricula.Name = "pnlAnularMatricula";
-            this.pnlAnularMatricula.Size = new System.Drawing.Size(308, 41);
-            this.pnlAnularMatricula.TabIndex = 13;
+            this.btnAnularMatricula.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAnularMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnAnularMatricula.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAnularMatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnularMatricula.Location = new System.Drawing.Point(-24, -15);
+            this.btnAnularMatricula.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnularMatricula.Name = "btnAnularMatricula";
+            this.btnAnularMatricula.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAnularMatricula.Size = new System.Drawing.Size(360, 70);
+            this.btnAnularMatricula.TabIndex = 0;
+            this.btnAnularMatricula.Text = "         Anular Matricula";
+            this.btnAnularMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnularMatricula.UseVisualStyleBackColor = false;
             // 
-            // btnwww
+            // btnGenerarActas
             // 
-            this.btnwww.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnwww.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnwww.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnwww.ForeColor = System.Drawing.Color.White;
-            this.btnwww.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.btnwww.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnwww.Location = new System.Drawing.Point(-24, -15);
-            this.btnwww.Margin = new System.Windows.Forms.Padding(4);
-            this.btnwww.Name = "btnwww";
-            this.btnwww.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.btnwww.Size = new System.Drawing.Size(360, 70);
-            this.btnwww.TabIndex = 0;
-            this.btnwww.Text = "         Anular Matricula";
-            this.btnwww.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnwww.UseVisualStyleBackColor = false;
+            this.btnGenerarActas.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnGenerarActas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarActas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarActas.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarActas.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnGenerarActas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarActas.Location = new System.Drawing.Point(-24, -15);
+            this.btnGenerarActas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarActas.Name = "btnGenerarActas";
+            this.btnGenerarActas.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnGenerarActas.Size = new System.Drawing.Size(360, 70);
+            this.btnGenerarActas.TabIndex = 0;
+            this.btnGenerarActas.Text = "         Generar Actas";
+            this.btnGenerarActas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarActas.UseVisualStyleBackColor = false;
             // 
-            // pnlGenerarActas
+            // btnGenrarActNotas
             // 
-            this.pnlGenerarActas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlGenerarActas.Controls.Add(this.btnssa);
-            this.pnlGenerarActas.Location = new System.Drawing.Point(0, 82);
-            this.pnlGenerarActas.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlGenerarActas.Name = "pnlGenerarActas";
-            this.pnlGenerarActas.Size = new System.Drawing.Size(308, 41);
-            this.pnlGenerarActas.TabIndex = 14;
+            this.btnGenrarActNotas.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnGenrarActNotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenrarActNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenrarActNotas.ForeColor = System.Drawing.Color.White;
+            this.btnGenrarActNotas.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnGenrarActNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenrarActNotas.Location = new System.Drawing.Point(-24, -15);
+            this.btnGenrarActNotas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenrarActNotas.Name = "btnGenrarActNotas";
+            this.btnGenrarActNotas.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnGenrarActNotas.Size = new System.Drawing.Size(360, 70);
+            this.btnGenrarActNotas.TabIndex = 0;
+            this.btnGenrarActNotas.Text = "         Generar Actas Notas";
+            this.btnGenrarActNotas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenrarActNotas.UseVisualStyleBackColor = false;
             // 
-            // btnssa
+            // btnModificarNotas
             // 
-            this.btnssa.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnssa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnssa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnssa.ForeColor = System.Drawing.Color.White;
-            this.btnssa.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.btnssa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssa.Location = new System.Drawing.Point(-24, -15);
-            this.btnssa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnssa.Name = "btnssa";
-            this.btnssa.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.btnssa.Size = new System.Drawing.Size(360, 70);
-            this.btnssa.TabIndex = 0;
-            this.btnssa.Text = "         Generar Actas";
-            this.btnssa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssa.UseVisualStyleBackColor = false;
+            this.btnModificarNotas.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnModificarNotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarNotas.ForeColor = System.Drawing.Color.White;
+            this.btnModificarNotas.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnModificarNotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarNotas.Location = new System.Drawing.Point(-24, -15);
+            this.btnModificarNotas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificarNotas.Name = "btnModificarNotas";
+            this.btnModificarNotas.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModificarNotas.Size = new System.Drawing.Size(360, 70);
+            this.btnModificarNotas.TabIndex = 0;
+            this.btnModificarNotas.Text = "         Moficar Notas";
+            this.btnModificarNotas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarNotas.UseVisualStyleBackColor = false;
             // 
-            // pnlGenerarActasNotas
+            // btnModAsistencia
             // 
-            this.pnlGenerarActasNotas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlGenerarActasNotas.Controls.Add(this.button13);
-            this.pnlGenerarActasNotas.Location = new System.Drawing.Point(0, 123);
-            this.pnlGenerarActasNotas.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlGenerarActasNotas.Name = "pnlGenerarActasNotas";
-            this.pnlGenerarActasNotas.Size = new System.Drawing.Size(308, 41);
-            this.pnlGenerarActasNotas.TabIndex = 15;
+            this.btnModAsistencia.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnModAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModAsistencia.ForeColor = System.Drawing.Color.White;
+            this.btnModAsistencia.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnModAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModAsistencia.Location = new System.Drawing.Point(-24, -15);
+            this.btnModAsistencia.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModAsistencia.Name = "btnModAsistencia";
+            this.btnModAsistencia.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModAsistencia.Size = new System.Drawing.Size(360, 70);
+            this.btnModAsistencia.TabIndex = 0;
+            this.btnModAsistencia.Text = "         Modificar Asistencias";
+            this.btnModAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModAsistencia.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnAsigCupos
             // 
-            this.button13.BackColor = System.Drawing.Color.CadetBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(-24, -15);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(360, 70);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "         Generar Actas Notas";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnAsigCupos.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAsigCupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsigCupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsigCupos.ForeColor = System.Drawing.Color.White;
+            this.btnAsigCupos.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAsigCupos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsigCupos.Location = new System.Drawing.Point(-24, -15);
+            this.btnAsigCupos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAsigCupos.Name = "btnAsigCupos";
+            this.btnAsigCupos.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAsigCupos.Size = new System.Drawing.Size(360, 70);
+            this.btnAsigCupos.TabIndex = 0;
+            this.btnAsigCupos.Text = "         Asignar Cupos";
+            this.btnAsigCupos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsigCupos.UseVisualStyleBackColor = false;
             // 
-            // pnlModificarNotas
+            // btnAsigProfesor
             // 
-            this.pnlModificarNotas.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlModificarNotas.Controls.Add(this.button14);
-            this.pnlModificarNotas.Location = new System.Drawing.Point(0, 164);
-            this.pnlModificarNotas.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlModificarNotas.Name = "pnlModificarNotas";
-            this.pnlModificarNotas.Size = new System.Drawing.Size(308, 41);
-            this.pnlModificarNotas.TabIndex = 16;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.CadetBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(-24, -15);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(360, 70);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "         Moficar Notas";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // pnlModificarAsistencia
-            // 
-            this.pnlModificarAsistencia.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlModificarAsistencia.Controls.Add(this.button15);
-            this.pnlModificarAsistencia.Location = new System.Drawing.Point(0, 205);
-            this.pnlModificarAsistencia.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlModificarAsistencia.Name = "pnlModificarAsistencia";
-            this.pnlModificarAsistencia.Size = new System.Drawing.Size(308, 41);
-            this.pnlModificarAsistencia.TabIndex = 17;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.CadetBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(-24, -15);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(360, 70);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "         Modificar Asistencias";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // pnlAsignarCupos
-            // 
-            this.pnlAsignarCupos.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAsignarCupos.Controls.Add(this.button16);
-            this.pnlAsignarCupos.Location = new System.Drawing.Point(0, 246);
-            this.pnlAsignarCupos.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAsignarCupos.Name = "pnlAsignarCupos";
-            this.pnlAsignarCupos.Size = new System.Drawing.Size(308, 41);
-            this.pnlAsignarCupos.TabIndex = 18;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.CadetBlue;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(-24, -15);
-            this.button16.Margin = new System.Windows.Forms.Padding(4);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(360, 70);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "         Asignar Cupos";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // pnlAsignarProfesor
-            // 
-            this.pnlAsignarProfesor.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlAsignarProfesor.Controls.Add(this.button17);
-            this.pnlAsignarProfesor.Location = new System.Drawing.Point(0, 287);
-            this.pnlAsignarProfesor.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAsignarProfesor.Name = "pnlAsignarProfesor";
-            this.pnlAsignarProfesor.Size = new System.Drawing.Size(308, 41);
-            this.pnlAsignarProfesor.TabIndex = 19;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.CadetBlue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(-24, -15);
-            this.button17.Margin = new System.Windows.Forms.Padding(4);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(360, 70);
-            this.button17.TabIndex = 0;
-            this.button17.Text = "         Asignar Profesor";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // pnlEnrolaNuevosEs
-            // 
-            this.pnlEnrolaNuevosEs.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlEnrolaNuevosEs.Controls.Add(this.btnssad);
-            this.pnlEnrolaNuevosEs.Location = new System.Drawing.Point(0, 328);
-            this.pnlEnrolaNuevosEs.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlEnrolaNuevosEs.Name = "pnlEnrolaNuevosEs";
-            this.pnlEnrolaNuevosEs.Size = new System.Drawing.Size(308, 41);
-            this.pnlEnrolaNuevosEs.TabIndex = 20;
+            this.btnAsigProfesor.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnAsigProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsigProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsigProfesor.ForeColor = System.Drawing.Color.White;
+            this.btnAsigProfesor.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnAsigProfesor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsigProfesor.Location = new System.Drawing.Point(-24, -15);
+            this.btnAsigProfesor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAsigProfesor.Name = "btnAsigProfesor";
+            this.btnAsigProfesor.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAsigProfesor.Size = new System.Drawing.Size(360, 70);
+            this.btnAsigProfesor.TabIndex = 0;
+            this.btnAsigProfesor.Text = "         Asignar Profesor";
+            this.btnAsigProfesor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsigProfesor.UseVisualStyleBackColor = false;
             // 
             // btnssad
             // 
@@ -912,7 +986,7 @@
             this.btnssad.ForeColor = System.Drawing.Color.White;
             this.btnssad.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
             this.btnssad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnssad.Location = new System.Drawing.Point(-24, -15);
+            this.btnssad.Location = new System.Drawing.Point(-24, -14);
             this.btnssad.Margin = new System.Windows.Forms.Padding(4);
             this.btnssad.Name = "btnssad";
             this.btnssad.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
@@ -922,15 +996,41 @@
             this.btnssad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnssad.UseVisualStyleBackColor = false;
             // 
-            // panel9
+            // btnEstudiante
             // 
-            this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(0, 853);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(308, 41);
-            this.panel9.TabIndex = 5;
+            this.btnEstudiante.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiante.ForeColor = System.Drawing.Color.White;
+            this.btnEstudiante.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnEstudiante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstudiante.Location = new System.Drawing.Point(-24, -16);
+            this.btnEstudiante.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEstudiante.Name = "btnEstudiante";
+            this.btnEstudiante.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnEstudiante.Size = new System.Drawing.Size(360, 70);
+            this.btnEstudiante.TabIndex = 2;
+            this.btnEstudiante.Text = "         Estudiante";
+            this.btnEstudiante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstudiante.UseVisualStyleBackColor = false;
+            // 
+            // btnMatricula
+            // 
+            this.btnMatricula.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnMatricula.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnMatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatricula.Location = new System.Drawing.Point(-23, -18);
+            this.btnMatricula.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMatricula.Name = "btnMatricula";
+            this.btnMatricula.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnMatricula.Size = new System.Drawing.Size(360, 70);
+            this.btnMatricula.TabIndex = 2;
+            this.btnMatricula.Text = "         Matriculación";
+            this.btnMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatricula.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -945,16 +1045,6 @@
             this.label9.Size = new System.Drawing.Size(103, 25);
             this.label9.TabIndex = 0;
             this.label9.Text = "       Perfil";
-            // 
-            // pnlCambiarContra
-            // 
-            this.pnlCambiarContra.BackColor = System.Drawing.Color.CadetBlue;
-            this.pnlCambiarContra.Controls.Add(this.button19);
-            this.pnlCambiarContra.Location = new System.Drawing.Point(0, 894);
-            this.pnlCambiarContra.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCambiarContra.Name = "pnlCambiarContra";
-            this.pnlCambiarContra.Size = new System.Drawing.Size(308, 41);
-            this.pnlCambiarContra.TabIndex = 11;
             // 
             // button19
             // 
@@ -975,18 +1065,6 @@
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // CerrarSesion
-            // 
-            this.CerrarSesion.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.CerrarSesion.Controls.Add(this.label6);
-            this.CerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CerrarSesion.Location = new System.Drawing.Point(0, 935);
-            this.CerrarSesion.Margin = new System.Windows.Forms.Padding(0);
-            this.CerrarSesion.Name = "CerrarSesion";
-            this.CerrarSesion.Size = new System.Drawing.Size(308, 41);
-            this.CerrarSesion.TabIndex = 5;
-            this.CerrarSesion.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -1001,33 +1079,50 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "       Cerrar Sesion";
             // 
+            // btnProfesor
+            // 
+            this.btnProfesor.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfesor.ForeColor = System.Drawing.Color.White;
+            this.btnProfesor.Image = global::ProyectoMatricula.Properties.Resources.radio_button_checked_20dp_FILL0_wght400_GRAD0_opsz20__1_;
+            this.btnProfesor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfesor.Location = new System.Drawing.Point(-24, -14);
+            this.btnProfesor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProfesor.Name = "btnProfesor";
+            this.btnProfesor.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnProfesor.Size = new System.Drawing.Size(360, 70);
+            this.btnProfesor.TabIndex = 3;
+            this.btnProfesor.Text = "         Profesor";
+            this.btnProfesor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProfesor.UseVisualStyleBackColor = false;
+            this.btnProfesor.Click += new System.EventHandler(this.btnProfesor_Click);
+            // 
+            // pnlFrmPrincipal
+            // 
+            this.pnlFrmPrincipal.BackColor = System.Drawing.Color.MintCream;
+            this.pnlFrmPrincipal.Location = new System.Drawing.Point(4, 36);
+            this.pnlFrmPrincipal.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlFrmPrincipal.Name = "pnlFrmPrincipal";
+            this.pnlFrmPrincipal.Size = new System.Drawing.Size(1009, 702);
+            this.pnlFrmPrincipal.TabIndex = 3;
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MintCream;
-            this.panel3.Controls.Add(this.pnlPrincipalFRM);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(320, 37);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1333, 738);
+            this.panel3.Size = new System.Drawing.Size(1013, 701);
             this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // pnlPrincipalFRM
-            // 
-            this.pnlPrincipalFRM.Location = new System.Drawing.Point(322, 39);
-            this.pnlPrincipalFRM.Name = "pnlPrincipalFRM";
-            this.pnlPrincipalFRM.Size = new System.Drawing.Size(1010, 698);
-            this.pnlPrincipalFRM.TabIndex = 0;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 738);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
@@ -1076,7 +1171,9 @@
             this.pnlCambiarContra.ResumeLayout(false);
             this.CerrarSesion.ResumeLayout(false);
             this.CerrarSesion.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1086,7 +1183,6 @@
         private System.Windows.Forms.Panel panel1;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
@@ -1130,24 +1226,31 @@
         private System.Windows.Forms.Panel pnlAsignarRol;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel pnlAnularMatricula;
-        private System.Windows.Forms.Button btnwww;
+        private System.Windows.Forms.Button btnAnularMatricula;
         private System.Windows.Forms.Panel pnlGenerarActas;
-        private System.Windows.Forms.Button btnssa;
+        private System.Windows.Forms.Button btnGenerarActas;
         private System.Windows.Forms.Panel pnlGenerarActasNotas;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnGenrarActNotas;
         private System.Windows.Forms.Panel pnlModificarNotas;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnModificarNotas;
         private System.Windows.Forms.Panel pnlModificarAsistencia;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnModAsistencia;
         private System.Windows.Forms.Panel pnlAsignarCupos;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnAsigCupos;
         private System.Windows.Forms.Panel pnlAsignarProfesor;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnAsigProfesor;
         private System.Windows.Forms.Panel pnlEnrolaNuevosEs;
         private System.Windows.Forms.Button btnssad;
         private System.Windows.Forms.Panel pnlCambiarContra;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Panel pnlPrincipalFRM;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnEstudiante;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnMatricula;
+        private System.Windows.Forms.Button btnProfesor;
+        private System.Windows.Forms.Panel pnlFrmPrincipal;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

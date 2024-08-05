@@ -146,18 +146,54 @@ namespace ProyectoMatricula
 
         private void button19_Click(object sender, EventArgs e)
         {
-            Cambiar_Contraseña objForm = new Cambiar_Contraseña();
+           /* Cambiar_Contraseña objForm = new Cambiar_Contraseña();
             objForm.TopLevel = false;
             panel3.Controls.Add(objForm);
             objForm.Location = new Point(255, 47);
 
             objForm.BringToFront();
-            objForm.Show();
+            objForm.Show();*/
+           abrirFormularioHijo(new Cambiar_Contraseña());
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void pnlPrincipalFRM_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProfesor_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FrmRegistrarProfesor());
+        }
+
+        private Form formularioActivo = null;
+        private void abrirFormularioHijo(Form panelHijo)
+        {
+            if (formularioActivo != null)
+                formularioActivo.Close();
+            formularioActivo = panelHijo;
+            panelHijo.TopLevel = false;
+            panelHijo.FormBorderStyle = FormBorderStyle.None;
+            panelHijo.Dock = DockStyle.Fill;
+            panelHijo.Location = new Point(320, 37);
+            panel3.Controls.Add(formularioActivo);
+            panel3.Tag = formularioActivo;
+            panelHijo.BringToFront();
+            formularioActivo.Show();
+
+
+        }
+
+
     }
 }
