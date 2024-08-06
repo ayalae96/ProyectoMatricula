@@ -158,18 +158,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.metroControlBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(240, 0);
+            this.panel1.Location = new System.Drawing.Point(320, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 30);
+            this.panel1.Size = new System.Drawing.Size(1013, 37);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 10);
+            this.label1.Location = new System.Drawing.Point(20, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 16);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Matricula - T";
             // 
@@ -183,7 +185,8 @@
             this.metroControlBox1.DefaultLocation = ReaLTaiizor.Enum.Metro.LocationType.Normal;
             this.metroControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
             this.metroControlBox1.IsDerivedStyle = true;
-            this.metroControlBox1.Location = new System.Drawing.Point(659, 1);
+            this.metroControlBox1.Location = new System.Drawing.Point(879, 1);
+            this.metroControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroControlBox1.MaximizeBox = true;
             this.metroControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.metroControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
@@ -208,8 +211,9 @@
             this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(240, 600);
+            this.panel2.Size = new System.Drawing.Size(320, 738);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -221,12 +225,13 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 600);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(320, 738);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel4
@@ -238,7 +243,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(240, 30);
+            this.panel4.Size = new System.Drawing.Size(320, 37);
             this.panel4.TabIndex = 0;
             // 
             // lblUser
@@ -246,9 +251,10 @@
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblUser.Location = new System.Drawing.Point(80, 9);
+            this.lblUser.Location = new System.Drawing.Point(107, 11);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(84, 13);
+            this.lblUser.Size = new System.Drawing.Size(103, 17);
             this.lblUser.TabIndex = 1;
             this.lblUser.Text = "[USERNAME]";
             this.lblUser.Click += new System.EventHandler(this.label3_Click);
@@ -258,10 +264,10 @@
             this.panel8.Controls.Add(this.lblRol);
             this.panel8.Controls.Add(this.label7);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 30);
+            this.panel8.Location = new System.Drawing.Point(0, 37);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(240, 30);
+            this.panel8.Size = new System.Drawing.Size(320, 37);
             this.panel8.TabIndex = 1;
             // 
             // lblRol
@@ -269,9 +275,10 @@
             this.lblRol.AutoSize = true;
             this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.ForeColor = System.Drawing.Color.White;
-            this.lblRol.Location = new System.Drawing.Point(55, 7);
+            this.lblRol.Location = new System.Drawing.Point(73, 9);
+            this.lblRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(67, 15);
+            this.lblRol.Size = new System.Drawing.Size(80, 18);
             this.lblRol.TabIndex = 1;
             this.lblRol.Text = "[UserRol]";
             // 
@@ -280,9 +287,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 7);
+            this.label7.Location = new System.Drawing.Point(16, 9);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.Size = new System.Drawing.Size(44, 18);
             this.label7.TabIndex = 0;
             this.label7.Text = "Rol: ";
             // 
@@ -295,10 +303,10 @@
             this.flowLayoutPanel1.Controls.Add(this.flAdministrativo);
             this.flowLayoutPanel1.Controls.Add(this.CerrarSesion);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 60);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 74);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 540);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(320, 664);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // flAcademico
@@ -314,7 +322,7 @@
             this.flAcademico.Location = new System.Drawing.Point(0, 0);
             this.flAcademico.Margin = new System.Windows.Forms.Padding(0);
             this.flAcademico.Name = "flAcademico";
-            this.flAcademico.Size = new System.Drawing.Size(231, 264);
+            this.flAcademico.Size = new System.Drawing.Size(308, 325);
             this.flAcademico.TabIndex = 6;
             // 
             // pnlAcademico
@@ -324,7 +332,7 @@
             this.pnlAcademico.Location = new System.Drawing.Point(0, 0);
             this.pnlAcademico.Margin = new System.Windows.Forms.Padding(0);
             this.pnlAcademico.Name = "pnlAcademico";
-            this.pnlAcademico.Size = new System.Drawing.Size(231, 33);
+            this.pnlAcademico.Size = new System.Drawing.Size(308, 41);
             this.pnlAcademico.TabIndex = 4;
             // 
             // pnlConsultarNota
@@ -720,9 +728,10 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Image = global::ProyectoMatricula.Properties.Resources.school_20dp_FILL0_wght400_GRAD0_opsz20__1_;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(2, 6);
+            this.label5.Location = new System.Drawing.Point(3, 7);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 20);
+            this.label5.Size = new System.Drawing.Size(161, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "       Academico";
             // 
@@ -737,8 +746,8 @@
             this.button1.Location = new System.Drawing.Point(-24, -15);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(270, 57);
+            this.button1.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(360, 70);
             this.button1.TabIndex = 0;
             this.button1.Text = "         Consultar Nota";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -755,8 +764,8 @@
             this.button2.Location = new System.Drawing.Point(-24, -15);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(270, 57);
+            this.button2.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(360, 70);
             this.button2.TabIndex = 0;
             this.button2.Text = "         Consultar Asistencia";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -773,8 +782,8 @@
             this.button4.Location = new System.Drawing.Point(-24, -15);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(270, 57);
+            this.button4.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(360, 70);
             this.button4.TabIndex = 0;
             this.button4.Text = "         Consultar Horario";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -791,8 +800,8 @@
             this.button3.Location = new System.Drawing.Point(-24, -15);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(270, 57);
+            this.button3.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(360, 70);
             this.button3.TabIndex = 0;
             this.button3.Text = "         Registro Asistencia";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -809,8 +818,8 @@
             this.button5.Location = new System.Drawing.Point(-24, -15);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(270, 57);
+            this.button5.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(360, 70);
             this.button5.TabIndex = 0;
             this.button5.Text = "         Registrar Nota";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -827,8 +836,8 @@
             this.button6.Location = new System.Drawing.Point(-24, -15);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(270, 57);
+            this.button6.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(360, 70);
             this.button6.TabIndex = 0;
             this.button6.Text = "         Generar Malla";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -845,8 +854,8 @@
             this.button7.Location = new System.Drawing.Point(-24, -15);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(270, 57);
+            this.button7.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(360, 70);
             this.button7.TabIndex = 0;
             this.button7.Text = "         Generar Horarios";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -859,9 +868,10 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Image = global::ProyectoMatricula.Properties.Resources.database_20dp_FILL0_wght400_GRAD0_opsz20__1_;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label11.Location = new System.Drawing.Point(2, 6);
+            this.label11.Location = new System.Drawing.Point(3, 7);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 20);
+            this.label11.Size = new System.Drawing.Size(148, 25);
             this.label11.TabIndex = 0;
             this.label11.Text = "       DataBase";
             // 
@@ -876,13 +886,12 @@
             this.btnGestionUsuarios.Location = new System.Drawing.Point(-24, -15);
             this.btnGestionUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.btnGestionUsuarios.Name = "btnGestionUsuarios";
-            this.btnGestionUsuarios.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnGestionUsuarios.Size = new System.Drawing.Size(270, 57);
+            this.btnGestionUsuarios.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnGestionUsuarios.Size = new System.Drawing.Size(360, 70);
             this.btnGestionUsuarios.TabIndex = 0;
             this.btnGestionUsuarios.Text = "         Gestion Usuarios";
             this.btnGestionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGestionUsuarios.UseVisualStyleBackColor = false;
-            this.btnGestionUsuarios.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
             // 
             // button9
             // 
@@ -895,8 +904,8 @@
             this.button9.Location = new System.Drawing.Point(-24, -15);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(270, 57);
+            this.button9.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button9.Size = new System.Drawing.Size(360, 70);
             this.button9.TabIndex = 0;
             this.button9.Text = "         Logs";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -913,8 +922,8 @@
             this.button10.Location = new System.Drawing.Point(-24, -15);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(270, 57);
+            this.button10.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.button10.Size = new System.Drawing.Size(360, 70);
             this.button10.TabIndex = 0;
             this.button10.Text = "         Asignar Roles";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -927,9 +936,10 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Image = global::ProyectoMatricula.Properties.Resources.history_edu_20dp_FILL0_wght400_GRAD0_opsz20__2_;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(2, 6);
+            this.label10.Location = new System.Drawing.Point(3, 7);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(157, 20);
+            this.label10.Size = new System.Drawing.Size(190, 25);
             this.label10.TabIndex = 0;
             this.label10.Text = "       Administrativo";
             // 
@@ -944,8 +954,8 @@
             this.btnAnularMat.Location = new System.Drawing.Point(-24, -15);
             this.btnAnularMat.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnularMat.Name = "btnAnularMat";
-            this.btnAnularMat.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnAnularMat.Size = new System.Drawing.Size(270, 57);
+            this.btnAnularMat.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAnularMat.Size = new System.Drawing.Size(360, 70);
             this.btnAnularMat.TabIndex = 0;
             this.btnAnularMat.Text = "         Anular Matricula";
             this.btnAnularMat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -962,8 +972,8 @@
             this.bntGenerarAct.Location = new System.Drawing.Point(-24, -15);
             this.bntGenerarAct.Margin = new System.Windows.Forms.Padding(4);
             this.bntGenerarAct.Name = "bntGenerarAct";
-            this.bntGenerarAct.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.bntGenerarAct.Size = new System.Drawing.Size(270, 57);
+            this.bntGenerarAct.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.bntGenerarAct.Size = new System.Drawing.Size(360, 70);
             this.bntGenerarAct.TabIndex = 0;
             this.bntGenerarAct.Text = "         Generar Actas";
             this.bntGenerarAct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -980,8 +990,8 @@
             this.btnGenerarActNot.Location = new System.Drawing.Point(-24, -15);
             this.btnGenerarActNot.Margin = new System.Windows.Forms.Padding(4);
             this.btnGenerarActNot.Name = "btnGenerarActNot";
-            this.btnGenerarActNot.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnGenerarActNot.Size = new System.Drawing.Size(270, 57);
+            this.btnGenerarActNot.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnGenerarActNot.Size = new System.Drawing.Size(360, 70);
             this.btnGenerarActNot.TabIndex = 0;
             this.btnGenerarActNot.Text = "         Generar Actas Notas";
             this.btnGenerarActNot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -998,8 +1008,8 @@
             this.btnModificarNot.Location = new System.Drawing.Point(-24, -15);
             this.btnModificarNot.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificarNot.Name = "btnModificarNot";
-            this.btnModificarNot.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnModificarNot.Size = new System.Drawing.Size(270, 57);
+            this.btnModificarNot.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModificarNot.Size = new System.Drawing.Size(360, 70);
             this.btnModificarNot.TabIndex = 0;
             this.btnModificarNot.Text = "         Moficar Notas";
             this.btnModificarNot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1016,8 +1026,8 @@
             this.btnModificarAsist.Location = new System.Drawing.Point(-24, -15);
             this.btnModificarAsist.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificarAsist.Name = "btnModificarAsist";
-            this.btnModificarAsist.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnModificarAsist.Size = new System.Drawing.Size(270, 57);
+            this.btnModificarAsist.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnModificarAsist.Size = new System.Drawing.Size(360, 70);
             this.btnModificarAsist.TabIndex = 0;
             this.btnModificarAsist.Text = "         Modificar Asistencias";
             this.btnModificarAsist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1034,8 +1044,8 @@
             this.btnAlumno.Location = new System.Drawing.Point(-24, -19);
             this.btnAlumno.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlumno.Name = "btnAlumno";
-            this.btnAlumno.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnAlumno.Size = new System.Drawing.Size(270, 57);
+            this.btnAlumno.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnAlumno.Size = new System.Drawing.Size(360, 70);
             this.btnAlumno.TabIndex = 0;
             this.btnAlumno.Text = "         Alumno";
             this.btnAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1089,8 +1099,8 @@
             this.btnEnrolarEst.Location = new System.Drawing.Point(-24, -9);
             this.btnEnrolarEst.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnrolarEst.Name = "btnEnrolarEst";
-            this.btnEnrolarEst.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnEnrolarEst.Size = new System.Drawing.Size(270, 57);
+            this.btnEnrolarEst.Padding = new System.Windows.Forms.Padding(53, 0, 0, 0);
+            this.btnEnrolarEst.Size = new System.Drawing.Size(360, 70);
             this.btnEnrolarEst.TabIndex = 0;
             this.btnEnrolarEst.Text = "         Enrolar Nuevos Estudiantes";
             this.btnEnrolarEst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1151,7 +1161,7 @@
             this.btnAsignarProf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsignarProf.UseVisualStyleBackColor = false;
             // 
-            // pnlTRX
+            // btnMatricula
             // 
             this.btnMatricula.BackColor = System.Drawing.Color.CadetBlue;
             this.btnMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1255,13 +1265,14 @@
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.pnlTRX);
+            this.ClientSize = new System.Drawing.Size(1333, 738);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -1303,9 +1314,6 @@
             this.pnlAsignarCupos.ResumeLayout(false);
             this.pnlAsignarProfesor.ResumeLayout(false);
             this.pnlEnrolaNuevosEs.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.pnlCambiarContra.ResumeLayout(false);
@@ -1329,6 +1337,7 @@
         private System.Windows.Forms.Panel panel1;
         private ReaLTaiizor.Controls.MetroControlBox metroControlBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel4;

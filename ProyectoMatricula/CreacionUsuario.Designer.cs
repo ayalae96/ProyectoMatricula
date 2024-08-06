@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // CreacionUsuario
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 450);
-            this.Name = "CreacionUsuario";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "CreacionUsuario";
-            this.ResumeLayout(false);
-
         }
 
         #endregion

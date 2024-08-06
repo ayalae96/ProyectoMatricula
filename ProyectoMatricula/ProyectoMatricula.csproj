@@ -117,9 +117,6 @@
     <EmbeddedResource Include="FrmRegistrarProfesor.resx">
       <DependentUpon>FrmRegistrarProfesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreacionUsuario.resx">
-      <DependentUpon>CreacionUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GenericoBusqueda.resx">
       <DependentUpon>GenericoBusqueda.cs</DependentUpon>
     </EmbeddedResource>
