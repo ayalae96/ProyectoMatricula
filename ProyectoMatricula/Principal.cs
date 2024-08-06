@@ -22,6 +22,7 @@ namespace ProyectoMatricula
         public Principal()
         {
             InitializeComponent();
+            personalizarDiseño();
             Login lg = new Login(this);
 
             lg.ShowDialog();
@@ -124,6 +125,50 @@ namespace ProyectoMatricula
             
         }
 
+        private void personalizarDiseño()
+        {
+            panelSubProfesor.Visible = false;
+            panelSubAlumno.Visible = false;
+        }
+
+        private void hideSubMenu()
+        {
+            if (panelSubProfesor.Visible == true)
+                panelSubProfesor.Visible = false;
+            if (panelSubAlumno.Visible == true)
+                panelSubAlumno.Visible = false;
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        private Form formularioActivo = null;
+        private void abrirFormularioHijo(Form panelHijo)
+        {
+            if (formularioActivo != null)
+                formularioActivo.Close();
+            formularioActivo = panelHijo;
+            panelHijo.TopLevel = false;
+            panelHijo.FormBorderStyle = FormBorderStyle.None;
+           panelHijo.Dock = DockStyle.Fill;
+            panel3.Controls.Add(formularioActivo);
+            panel3.Tag = formularioActivo;
+            panelHijo.BringToFront();
+            formularioActivo.Show();
+
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -146,18 +191,28 @@ namespace ProyectoMatricula
 
         private void button19_Click(object sender, EventArgs e)
         {
-            Cambiar_Contraseña objForm = new Cambiar_Contraseña();
-            objForm.TopLevel = false;
-            panel3.Controls.Add(objForm);
-            objForm.Location = new Point(255, 47);
-
-            objForm.BringToFront();
-            objForm.Show();
+ 
+           abrirFormularioHijo(new Cambiar_Contraseña());
         }
 
         private void btnProfesor_Click(object sender, EventArgs e)
         {
+            showSubMenu(panelSubProfesor);
+        }
 
+        private void btnAlumno_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelSubAlumno);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarProfesor_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new FrmRegistrarProfesor());
         }
     }
 }
