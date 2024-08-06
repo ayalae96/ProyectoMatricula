@@ -23,7 +23,7 @@ namespace ProyectoMatricula
                 datos.Add(new DatoSQL(TipoDato.String, usuario, "USUARIO"));
                 datos.Add(new DatoSQL(TipoDato.String, contrasena, "CONTRASENA"));
 
-                ds = ejecutarProcedimientoAlmacenadoSimple("spIniciarSesion", datos);
+               // ds = ejecutarProcedimientoAlmacenadoSimple("spIniciarSesion", datos);
             }
             catch (Exception ex)
             {
