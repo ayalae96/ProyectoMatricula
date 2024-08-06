@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMatricula
 {
-    partial class Cambiar_Contraseña
+    partial class CambiarContrasena
     {
         /// <summary>
         /// Required designer variable.
@@ -51,16 +51,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 17);
+            this.label1.Location = new System.Drawing.Point(25, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Contraseña Antigua";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(47, 77);
+            this.textBox2.Location = new System.Drawing.Point(28, 77);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(112, 20);
@@ -69,10 +70,12 @@
             // tbUser
             // 
             this.tbUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUser.Location = new System.Drawing.Point(47, 35);
+            this.tbUser.Location = new System.Drawing.Point(28, 38);
             this.tbUser.Name = "tbUser";
+            this.tbUser.PasswordChar = '*';
             this.tbUser.Size = new System.Drawing.Size(112, 20);
             this.tbUser.TabIndex = 4;
+            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
             // label3
             // 
@@ -87,7 +90,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(47, 118);
+            this.textBox1.Location = new System.Drawing.Point(28, 118);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(112, 20);
@@ -96,18 +99,18 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(47, 160);
+            this.button1.Location = new System.Drawing.Point(41, 144);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 10;
             this.button1.Text = "Cambiar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Cambiar_Contraseña
+            // CambiarContrasena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(184, 202);
+            this.ClientSize = new System.Drawing.Size(169, 181);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -116,7 +119,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.tbUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Cambiar_Contraseña";
+            this.Name = "CambiarContrasena";
             this.Text = "Cambiar_Contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();

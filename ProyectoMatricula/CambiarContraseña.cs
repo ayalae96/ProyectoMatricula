@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ProyectoMatricula
 {
-    public partial class Cambiar_Contraseña : Form
+    public partial class CambiarContrasena : Form
     {
-        public Cambiar_Contraseña()
+        public CambiarContrasena()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
