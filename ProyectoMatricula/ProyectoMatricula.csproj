@@ -114,8 +114,13 @@
     <EmbeddedResource Include="ConsultarPersonaExistente.resx">
       <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmRegistrarProfesor.resx">
       <DependentUpon>FrmRegistrarProfesor.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="CreacionUsuario.resx">
+      <DependentUpon>CreacionUsuario.cs</DependentUpon>
+>>>>>>> Integrado
     </EmbeddedResource>
     <EmbeddedResource Include="GenericoBusqueda.resx">
       <DependentUpon>GenericoBusqueda.cs</DependentUpon>
