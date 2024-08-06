@@ -71,7 +71,6 @@
     <Compile Include="CreacionUsuario.Designer.cs">
       <DependentUpon>CreacionUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="CodeFile1.cs" />
     <Compile Include="FrmRegistrarProfesor.cs">
       <SubType>Form</SubType>
     </Compile>

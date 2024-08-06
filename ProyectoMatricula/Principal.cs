@@ -192,7 +192,7 @@ namespace ProyectoMatricula
         private void button19_Click(object sender, EventArgs e)
         {
  
-           abrirFormularioHijo(new Cambiar_Contraseña());
+           abrirFormularioHijo(new CambiarContrasena());
         }
 
         private void btnProfesor_Click(object sender, EventArgs e)
