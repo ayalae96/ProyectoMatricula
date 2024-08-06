@@ -30,39 +30,36 @@ namespace ProyectoMatricula
         private void Login_Click(object sender, EventArgs e)
         {
             DataSet ds = loginSQL.spIniciarSesion(tbUser.Text, tbContrasena.Text);
-            if (ds != null)
+            if (ds != null && ds.Tables.Count > 0 && (int)ds.Tables[0].Rows[0][0] > 0)
             {
-                if((int)ds.Tables[0].Rows[0][0] > 0)
+                int rol = (int)ds.Tables[1].Rows[0][0];
+                switch (rol)
                 {
-                    int rol = (int)ds.Tables[1].Rows[0][0];
-                    switch (rol)
-                    {
-                        case 1:
-                            principal.tipoUsuario = rol;
-                            principal.setMenu(tbUser.Text, "Alumno");
-                            break;
-                        case 2:
-                            principal.tipoUsuario = rol;
-                            principal.setMenu(tbUser.Text, "Profesor");
+                    case 1:
+                        principal.tipoUsuario = rol;
+                        principal.setMenu(tbUser.Text, "Alumno");
+                        break;
+                    case 2:
+                        principal.tipoUsuario = rol;
+                        principal.setMenu(tbUser.Text, "Profesor");
 
-                            break;
-                        case 3:
-                            principal.tipoUsuario= rol;
-                            principal.setMenu(tbUser.Text, "Administrativo");
+                        break;
+                    case 3:
+                        principal.tipoUsuario = rol;
+                        principal.setMenu(tbUser.Text, "Administrativo");
 
-                            break;
-                        case 4:
-                            principal.tipoUsuario= rol;
-                            principal.setMenu(tbUser.Text, "DBA");
+                        break;
+                    case 4:
+                        principal.tipoUsuario = rol;
+                        principal.setMenu(tbUser.Text, "DBA");
 
-                            break;
-                    }
-                    this.Close();
+                        break;
                 }
-                else
-                {
-                    MessageBox.Show("Credenciales Erroneas");
-                }
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Credenciales Erroneas");
             }
         }
     }
