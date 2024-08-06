@@ -20,7 +20,7 @@ namespace ProyectoMatricula
             try
             {
                 conexion = new SqlConnection("server=EDUARDO-UG\\DB001 ;" +
-                    " database=PuntoDeVenta ; integrated security = true ; Encrypt=False");
+                    " database=Matricula-te ; integrated security = true ; Encrypt=False");
             }
             catch (Exception ex)
             {
@@ -36,7 +36,7 @@ namespace ProyectoMatricula
             conexion.Close();
         }
 
-        public DataSet ejecutarProcedimientoAlmacenado(string nombreSP, List<DatoSQL> lstDato)
+        public DataSet ejecutarProcedimientoAlmacenadoSimple(string nombreSP, List<DatoSQL> lstDato)
         {
             abrir();
             DataSet ds = new DataSet();

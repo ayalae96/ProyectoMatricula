@@ -121,7 +121,6 @@ namespace ProyectoMatricula
             
         }
 
-<<<<<<< HEAD
         private void personalizarDiseño()
         {
             panelSubProfesor.Visible = false;
@@ -157,21 +156,19 @@ namespace ProyectoMatricula
             formularioActivo = panelHijo;
             panelHijo.TopLevel = false;
             panelHijo.FormBorderStyle = FormBorderStyle.None;
-           panelHijo.Dock = DockStyle.Fill;
-            panel3.Controls.Add(formularioActivo);
-            panel3.Tag = formularioActivo;
+            panelHijo.Dock = DockStyle.Fill;
+            pnlTRX.Controls.Add(formularioActivo);
+            pnlTRX.Tag = formularioActivo;
             panelHijo.BringToFront();
             formularioActivo.Show();
 
-
-=======
+        }
         public void reiniciarPaneles()
         {
             this.flDataBase.Visible = true;
             this.flAcademico.Visible = true;
             this.flAdministrativo.Visible = true;
             pnlTRX.Controls.Clear();
->>>>>>> Integradas funciones a principal
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -196,10 +193,8 @@ namespace ProyectoMatricula
 
         private void button19_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
  
-           abrirFormularioHijo(new Cambiar_Contraseña());
-=======
+           //abrirFormularioHijo(new Cambiar_Contraseña());
             agregarFormaInterna(new CambiarContrasena());
 
         }
@@ -212,7 +207,6 @@ namespace ProyectoMatricula
             objForm.Location = new Point(5 + (10*instancias), 5 + (10*instancias));
             objForm.BringToFront();
             objForm.Show();
->>>>>>> Integradas funciones a principal
         }
 
         private void btnProfesor_Click(object sender, EventArgs e)
@@ -230,11 +224,10 @@ namespace ProyectoMatricula
 
         }
 
-<<<<<<< HEAD
         private void btnRegistrarProfesor_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FrmRegistrarProfesor());
-=======
+        }
         private void btnGestionUsuarios_Click(object sender, EventArgs e)
         {
             agregarFormaInterna(new GestionUsuarios(this.lblUser.Text));
@@ -246,7 +239,11 @@ namespace ProyectoMatricula
             var form = new Login(this);
             //form.Closed += (s, args) => this.Close();
             form.ShowDialog();
->>>>>>> Integradas funciones a principal
+        }
+
+        private void btnGestionUsuarios_Click_1(object sender, EventArgs e)
+        {
+            agregarFormaInterna(new GestionUsuarios(lblUser.Text));
         }
     }
 }
