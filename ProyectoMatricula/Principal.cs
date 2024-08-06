@@ -29,12 +29,14 @@ namespace ProyectoMatricula
         }
         bool menuExpand = false;
 
-        public void setMenu()
+        public void setMenu(string usuario, string rol)
         {
+            reiniciarPaneles();
+
+            lblUser.Text = usuario;
+            lblRol.Text = rol;
             if (tipoUsuario == 1)
             {
-                lblUser.Text = "UserAlumno";
-                lblRol.Text = "Alumno";
                 this.flDataBase.Visible = false;
 
                 this.pnlConsultarNota.Visible = true;
@@ -59,8 +61,6 @@ namespace ProyectoMatricula
             }
             if (tipoUsuario == 2)
             {
-                lblUser.Text = "UserProfe";
-                lblRol.Text = "Profesor";
                 this.flDataBase.Visible = false;
 
                 this.pnlConsultarNota.Visible = false;
@@ -88,8 +88,6 @@ namespace ProyectoMatricula
             }
             if (tipoUsuario == 3)
             {
-                lblUser.Text = "UserAdmi";
-                lblRol.Text = "Administrativo";
                 this.flDataBase.Visible = false;
 
                 this.pnlConsultarNota.Visible = false;
@@ -116,8 +114,6 @@ namespace ProyectoMatricula
             }
             if (tipoUsuario == 4)
             {
-                lblUser.Text = "UserDBA";
-                lblRol.Text = "DataBaseAdmin";
                 this.flDataBase.Visible = true;
                 this.flAcademico.Visible = false;
                 this.flAdministrativo.Visible = false;
@@ -125,6 +121,7 @@ namespace ProyectoMatricula
             
         }
 
+<<<<<<< HEAD
         private void personalizarDiseño()
         {
             panelSubProfesor.Visible = false;
@@ -167,6 +164,14 @@ namespace ProyectoMatricula
             formularioActivo.Show();
 
 
+=======
+        public void reiniciarPaneles()
+        {
+            this.flDataBase.Visible = true;
+            this.flAcademico.Visible = true;
+            this.flAdministrativo.Visible = true;
+            pnlTRX.Controls.Clear();
+>>>>>>> Integradas funciones a principal
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -191,8 +196,23 @@ namespace ProyectoMatricula
 
         private void button19_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
  
-           abrirFormularioHijo(new CambiarContrasena());
+           abrirFormularioHijo(new Cambiar_Contraseña());
+=======
+            agregarFormaInterna(new CambiarContrasena());
+
+        }
+
+        public void agregarFormaInterna(Form objForm)
+        {
+            objForm.TopLevel = false;
+            pnlTRX.Controls.Add(objForm);
+            int instancias = Application.OpenForms.OfType<Control>().Count();
+            objForm.Location = new Point(5 + (10*instancias), 5 + (10*instancias));
+            objForm.BringToFront();
+            objForm.Show();
+>>>>>>> Integradas funciones a principal
         }
 
         private void btnProfesor_Click(object sender, EventArgs e)
@@ -210,9 +230,23 @@ namespace ProyectoMatricula
 
         }
 
+<<<<<<< HEAD
         private void btnRegistrarProfesor_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new FrmRegistrarProfesor());
+=======
+        private void btnGestionUsuarios_Click(object sender, EventArgs e)
+        {
+            agregarFormaInterna(new GestionUsuarios(this.lblUser.Text));
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            var form = new Login(this);
+            //form.Closed += (s, args) => this.Close();
+            form.ShowDialog();
+>>>>>>> Integradas funciones a principal
         }
     }
 }
