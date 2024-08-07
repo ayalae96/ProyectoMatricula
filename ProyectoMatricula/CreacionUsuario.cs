@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoMatricula.UtilidadesSQL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,36 @@ namespace ProyectoMatricula
 {
     public partial class CreacionUsuario : Form
     {
-        DataSet ds;
+        DataSet dsPersona;
+        DataSet dsDatos;
         public CreacionUsuario(DataSet ds)
         {
             InitializeComponent();
-            this.ds = ds;
+            this.dsPersona = ds;
+
+            this.pnlParametros.Controls.Add(new ConsultaGenericaParametro("Rol"));
         }
-        public CreacionUsuario() { }
+        public CreacionUsuario() 
+        {
+            InitializeComponent();
+            //this.dsPersona = ds;
+        }
+
+        private void CreacionUsuario_Load(object sender, EventArgs e)
+        {
+            var f = new PanelConsultaParametrosGenerico("Persona");
+            this.pnlParametros.Controls.Add(f);
+            f.Dock = DockStyle.Fill;
+            f.Location = new Point(0, 0);
+            f.Visible = true;
+            this.Size = new System.Drawing.Size(280 * f.columnasCampos, 160 + (45 * f.filasCampos));
+            Refresh();
+        }
+
+        private void pnlParametros_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

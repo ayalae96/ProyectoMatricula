@@ -62,5 +62,11 @@ namespace ProyectoMatricula
                 MessageBox.Show("Credenciales Erroneas");
             }
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form f = new CreacionUsuario();
+            f.Show();
+        }
     }
 }

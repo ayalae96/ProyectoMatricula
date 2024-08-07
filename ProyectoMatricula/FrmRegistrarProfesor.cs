@@ -16,5 +16,10 @@ namespace ProyectoMatricula
         {
             InitializeComponent();
         }
+
+        private void FrmRegistrarProfesor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
