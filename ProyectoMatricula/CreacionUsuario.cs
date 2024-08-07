@@ -20,7 +20,7 @@ namespace ProyectoMatricula
             InitializeComponent();
             this.dsPersona = ds;
 
-            this.pnlParametros.Controls.Add(new ConsultaGenericaParametro("Rol"));
+            //this.pnlParametros.Controls.Add(new ConsultaGenericaParametro("Rol"));
         }
         public CreacionUsuario() 
         {
