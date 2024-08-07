@@ -65,10 +65,10 @@
     <Compile Include="ConsultarPersonaExistente.Designer.cs">
       <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreacionUsuario.cs">
+    <Compile Include="CrudGenerico\CreacionUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreacionUsuario.Designer.cs">
+    <Compile Include="CrudGenerico\CreacionUsuario.Designer.cs">
       <DependentUpon>CreacionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarProfesor.cs">
@@ -77,7 +77,7 @@
     <Compile Include="FrmRegistrarProfesor.Designer.cs">
       <DependentUpon>FrmRegistrarProfesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelConsultaParametrosGenerico.cs">
+    <Compile Include="CrudGenerico\PanelConsultaParametrosGenerico.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UtilidadesSQL\ConexionSQL.cs" />
@@ -118,7 +118,7 @@
     <EmbeddedResource Include="ConsultarPersonaExistente.resx">
       <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreacionUsuario.resx">
+    <EmbeddedResource Include="CrudGenerico\CreacionUsuario.resx">
       <DependentUpon>CreacionUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarProfesor.resx">
