@@ -1,4 +1,5 @@
-﻿using ProyectoMatricula.UtilidadesSQL;
+﻿using ProyectoMatricula.CrudGenerico;
+using ProyectoMatricula.UtilidadesSQL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -21,11 +22,35 @@ namespace ProyectoMatricula
         /// Generara un panel con todos los datos y controles de una tabla
         /// </summary>
         /// <param name="tabla">Nombre de la tabla a consultar</param>
-        public PanelConsultaParametrosGenerico(string tabla)
+        public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo)
+        {
+            inicializarControl(tabla);
+            establecerModoConsulta(modo);
+            this.Refresh();
+        }
+
+        public void establecerModoConsulta(ModoConsultaPanelGenerico modo)
+        {
+            switch(modo)
+            {
+                case ModoConsultaPanelGenerico.Crear:
+                    MessageBox.Show("Ingrese los datos...");
+                    break;
+                case ModoConsultaPanelGenerico.Actualizar:
+                    //
+                    break;
+                case ModoConsultaPanelGenerico.Leer:
+                    //
+                    break;
+                case ModoConsultaPanelGenerico.Eliminar:
+                    //
+                    break;
+            }
+        }
+        public void inicializarControl(string tabla)
         {
             obtenerDatosTabla(tabla);
             inicializarDatos();
-            this.Refresh();
         }
         /// <summary>
         /// Llenado del dataset con todos los datos necesarios

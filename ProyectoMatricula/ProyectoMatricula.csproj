@@ -71,6 +71,7 @@
     <Compile Include="CrudGenerico\CreacionUsuario.Designer.cs">
       <DependentUpon>CreacionUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudGenerico\ModoConsultaPanelGenerico.cs" />
     <Compile Include="FrmRegistrarProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
