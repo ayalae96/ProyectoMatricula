@@ -35,7 +35,7 @@ namespace ProyectoMatricula
             f.Dock = DockStyle.Fill;
             f.Location = new Point(0, 0);
             f.Visible = true;
-            this.Size = new System.Drawing.Size(280 * f.columnasCampos, 160 + (45 * f.filasCampos));
+            this.Size = new System.Drawing.Size(280 * f.columnasCampos, 120 + (35 * f.filasCampos));
             Refresh();
         }
 
