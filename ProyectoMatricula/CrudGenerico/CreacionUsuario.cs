@@ -30,7 +30,7 @@ namespace ProyectoMatricula
 
         private void CreacionUsuario_Load(object sender, EventArgs e)
         {
-            var f = new PanelConsultaParametrosGenerico("Persona", CrudGenerico.ModoConsultaPanelGenerico.Crear);
+            var f = new PanelConsultaParametrosGenerico("Profesor");
             this.pnlParametros.Controls.Add(f);
             f.Dock = DockStyle.Fill;
             f.Location = new Point(0, 0);

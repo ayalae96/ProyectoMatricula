@@ -18,13 +18,22 @@ namespace ProyectoMatricula
         int campos;
         public int columnasCampos;
         public int filasCampos;
-        public List<Control> lstCampos; 
+        public List<Control> lstCampos;
+        private string id;
         /// <summary>
         /// Generara un panel con todos los datos y controles de una tabla
         /// </summary>
         /// <param name="tabla">Nombre de la tabla a consultar</param>
-        public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo)
+        public PanelConsultaParametrosGenerico(string tabla)
         {
+
+            inicializarControl(tabla);
+            establecerModoConsulta(ModoConsultaPanelGenerico.Crear);
+            this.Refresh();
+        }
+        public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo, string id)
+        {
+            this.id = id;
             inicializarControl(tabla);
             establecerModoConsulta(modo);
             this.Refresh();
@@ -79,7 +88,15 @@ namespace ProyectoMatricula
         public void inicializarControl(string tabla)
         {
             lstCampos = new List<Control>();
-            obtenerDatosTabla(tabla);
+            ;
+            if (id == null )
+            {
+                obtenerDatosTabla(tabla);
+            }
+            else
+            {
+                obtenerDatosTabla(tabla, id);
+            }
             inicializarDatos();
         }
         /// <summary>
@@ -89,6 +106,10 @@ namespace ProyectoMatricula
         public void obtenerDatosTabla(string tabla)
         {
             this.datosLlenado = new ConsultaGenericaSQL().spObtenerDatosTabla(tabla);
+        }
+        public void obtenerDatosTabla(string tabla, string id)
+        {
+            this.datosLlenado = new ConsultaGenericaSQL().spObtenerDatosTabla(tabla, id);
         }
         /// <summary>
         /// Metodo Inicializador.
