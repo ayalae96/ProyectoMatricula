@@ -19,7 +19,12 @@ namespace ProyectoMatricula
         public int columnasCampos;
         public int filasCampos;
         public List<Control> lstCampos;
+        public List<Control> lstBotones;
+        public List<string> lstColumnas;
         private string id;
+        TableLayoutPanel pnlTRX;
+        TableLayoutPanel pnlBotones;
+        
         /// <summary>
         /// Generara un panel con todos los datos y controles de una tabla
         /// </summary>
@@ -38,13 +43,31 @@ namespace ProyectoMatricula
             establecerModoConsulta(modo);
             this.Refresh();
         }
-
+        public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo, string id, List<string> lstColumnas)
+        {
+            this.id = id;
+            inicializarControl(tabla);
+            establecerModoConsulta(modo);
+            this.Refresh();
+            this.lstColumnas = lstColumnas;
+        }
+        public Button generarBotonFormato(string nombre, Color color)
+        {
+            Button boton = new Button();
+            boton.Text = nombre;
+            boton.FlatStyle = FlatStyle.Flat;
+            if(color != null) boton.BackColor = color;
+            boton.Size = new Size(80, 23);
+            return boton;
+        }
         public void establecerModoConsulta(ModoConsultaPanelGenerico modo)
         {
+            lstBotones = new List<Control> ();  
             switch(modo)
             {
                 case ModoConsultaPanelGenerico.Crear:
                     MessageBox.Show("Ingrese los datos...");
+                    lstBotones.Add(generarBotonFormato("Crear", Color.DeepSkyBlue));
                     break;
                 case ModoConsultaPanelGenerico.Actualizar:
                     // llenar
@@ -61,6 +84,14 @@ namespace ProyectoMatricula
                     quemarCampos();
                     break;
             }
+            FlowLayoutPanel f = new FlowLayoutPanel();
+            f.AutoSize = true;
+            f.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            f.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom);
+            foreach(Control c in lstBotones) f.Controls.Add(c);
+            pnlBotones.Controls.Add(f);
+            //centrarControles(lstBotones, pnlBotones);
+
         }
         public void quemarCampos()
         {
@@ -125,22 +156,42 @@ namespace ProyectoMatricula
         public void iniciarPanelTransaccional()
         {
             //Atributos referenciales
-            campos = datosLlenado.Tables[0].Columns.Count;
+            if (lstColumnas == null) 
+            {
+                campos = datosLlenado.Tables[0].Columns.Count; 
+            } else 
+            {
+                campos = lstColumnas.Count; 
+            }
             columnasCampos = 2;
             filasCampos = ((campos - (campos % columnasCampos)) / columnasCampos) + campos % columnasCampos;
 
             //Atributos TableLayoutPanel 
-            this.ColumnCount = columnasCampos;
-            this.RowCount = filasCampos + 1;
+            this.ColumnCount = 1;
+            this.RowCount = 2;
+            this.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+
+            this.pnlTRX = new TableLayoutPanel();
+            this.pnlTRX.ColumnCount = columnasCampos;
+            this.pnlTRX.RowCount = filasCampos + 1;
             for (int i = 0; i < columnasCampos; i++)
             {
-                this.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+                this.pnlTRX.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             }
             for (int i = 0; i < filasCampos; i++)
             {
-                this.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+                this.pnlTRX.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             }
-            this.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            //this.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+
+            pnlTRX.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlTRX.Margin = new Padding(0);
+
+            this.Controls.Add(pnlTRX, 0, 0);
+
+
 
             //Atributos Control 
             this.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -149,6 +200,14 @@ namespace ProyectoMatricula
             this.Name = "pnlTabla";
             this.BackColor = Color.LightGray;
             this.Visible = true;
+        }
+       public void centrarControles(List<Control> ctls, Control container)
+        {
+            int w = container.ClientSize.Width;
+            int marge = (w - ctls.Sum(x => x.Width)) / 2;
+            Padding oldM = ctls[0].Margin;
+            ctls.First().Margin = new Padding(marge, oldM.Top, oldM.Right, oldM.Bottom);
+            ctls.Last().Margin = new Padding(oldM.Left, oldM.Top, oldM.Right, marge);
         }
         /// <summary>
         /// Insera los paneles internos de cada transaccion, y les asigna un control segun el tipo de dato.
@@ -161,11 +220,29 @@ namespace ProyectoMatricula
             {
                 for (int y = 0; y < filasCampos && contadorCampos < campos ; y++)
                 {
-                    string nombreCampo = (string)datosLlenado.Tables[2].Rows[contadorCampos][0];
-                    this.Controls.Add(generarPanelInterno(nombreCampo, contadorCampos), x, y);
+                    string nombreCampo;
+                    if (lstColumnas == null)
+                    {
+                        nombreCampo = (string)datosLlenado.Tables[2].Rows[contadorCampos][0];
+                    }
+                    else
+                    {
+                        nombreCampo = lstColumnas[contadorCampos];
+                    }
+
+                    this.pnlTRX.Controls.Add(generarPanelInterno(nombreCampo, contadorCampos), x, y);
                     contadorCampos++;
                 }
             }
+            pnlBotones = new TableLayoutPanel();
+            //pnlBotones.FlowDirection = FlowDirection.LeftToRight;
+            pnlBotones.RowCount = 1;
+            pnlBotones.ColumnCount = 1;
+            pnlBotones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            pnlBotones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F)); 
+            pnlBotones.Dock = DockStyle.Bottom;
+            this.Controls.Add(pnlBotones, 0, 1);
+            
         }
 
         /// <summary>
@@ -239,7 +316,6 @@ namespace ProyectoMatricula
             flayout.FlowDirection = FlowDirection.LeftToRight;
             flayout.Margin = new Padding(0);
             flayout.Controls.Add(control);
-
             flayout.Dock = DockStyle.Fill;
             return flayout;
         }
@@ -252,15 +328,15 @@ namespace ProyectoMatricula
         public Control obtenerCampo(string nombreCampo, int contadorCampo)
         {
             Padding padding = new Padding(0, 8, 0, 0);
+            Control c = new Control();
             for (int i = 0; i < datosLlenado.Tables[1].Rows.Count; i++)
             {
                 string nombreForaneo = (string) datosLlenado.Tables[1].Rows[0][i];
                 string tipoDato = (string)datosLlenado.Tables[2].Rows[contadorCampo][2];
                 if(string.Compare(nombreCampo, nombreForaneo,StringComparison.Ordinal) == 0)
                 {
-                    ComboBox cb = new ComboBox();
-                    cb.Margin = padding;
-                    return cb;
+                    c = new ComboBox();
+                    c.Margin = padding;
                 }
                 else if(string.Compare(tipoDato, "date", StringComparison.Ordinal) == 0)
                 {
@@ -269,14 +345,17 @@ namespace ProyectoMatricula
                     d.CustomFormat = "dd-MM-yyyy";
                     d.Size = new Size(100, 20);
                     d.Margin = padding;
-                    return d;
-
+                    c = d;
+                }
+                else
+                {
+                    c = new TextBox();
+                    c.Margin = padding;
+                    if (contadorCampo == 0) c.Enabled = false;
                 }
             }
-            TextBox tb = new TextBox();
-            tb.Margin = padding ;
-            if ( contadorCampo == 0 ) tb.Enabled = false; 
-            return tb;
+            return c;
+
         }
         /// <summary>
         /// Genera el label correspondiente
