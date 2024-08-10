@@ -18,6 +18,7 @@ namespace ProyectoMatricula
         int campos;
         public int columnasCampos;
         public int filasCampos;
+        public List<Control> lstCampos; 
         /// <summary>
         /// Generara un panel con todos los datos y controles de una tabla
         /// </summary>
@@ -37,18 +38,47 @@ namespace ProyectoMatricula
                     MessageBox.Show("Ingrese los datos...");
                     break;
                 case ModoConsultaPanelGenerico.Actualizar:
-                    //
+                    // llenar
+                    llenarDatos();
                     break;
                 case ModoConsultaPanelGenerico.Leer:
-                    //
+                    // llenar y quemar
+                    llenarDatos();
+                    quemarCampos();
                     break;
                 case ModoConsultaPanelGenerico.Eliminar:
-                    //
+                    // llenar y quemar
+                    llenarDatos();
+                    quemarCampos();
                     break;
             }
         }
+        public void quemarCampos()
+        {
+            foreach(Control c in lstCampos)
+            {
+                c.Enabled = false;
+            }
+        }
+        public void activarCampos()
+        {
+            for (int i = 0; i < lstCampos.Count; i++)
+            {
+                if (i != 0) lstCampos[i].Enabled = true;
+            }
+        }
+
+        public void estadoID(bool estado)
+        {
+            lstCampos[0].Enabled= estado;
+        }
+        public void llenarDatos()
+        {
+
+        }
         public void inicializarControl(string tabla)
         {
+            lstCampos = new List<Control>();
             obtenerDatosTabla(tabla);
             inicializarDatos();
         }
