@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignarRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignarRoles.Designer.cs">
+      <DependentUpon>AsignarRoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="CambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="CrudGenerico\PanelConsultaParametrosGenerico.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListaErrores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaErrores.Designer.cs">
+      <DependentUpon>ListaErrores.cs</DependentUpon>
     </Compile>
     <Compile Include="UtilidadesSQL\ConexionSQL.cs" />
     <Compile Include="GenericoBusqueda.cs">
@@ -109,10 +121,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UtilidadesSQL\ConsultaGenericaSQL.cs" />
+    <Compile Include="UtilidadesSQL\ConsultaRolSQL.cs" />
     <Compile Include="UtilidadesSQL\DatoSQL.cs" />
     <Compile Include="UtilidadesSQL\GestionUsuarioSQL.cs" />
     <Compile Include="UtilidadesSQL\LoginSQL.cs" />
     <Compile Include="UtilidadesSQL\TipoDato.cs" />
+    <EmbeddedResource Include="AsignarRoles.resx">
+      <DependentUpon>AsignarRoles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CambiarContraseña.resx">
       <DependentUpon>CambiarContraseña.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionUsuarios.resx">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaErrores.resx">
+      <DependentUpon>ListaErrores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

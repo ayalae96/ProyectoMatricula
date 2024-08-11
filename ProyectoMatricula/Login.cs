@@ -30,6 +30,7 @@ namespace ProyectoMatricula
         private void Login_Click(object sender, EventArgs e)
         {
             DataSet ds = loginSQL.spIniciarSesion(tbUser.Text, tbContrasena.Text);
+            MessageBox.Show((ds != null) + " " + (ds.Tables.Count > 0) + " "); 
             if (ds != null && ds.Tables.Count > 0 && (int)ds.Tables[0].Rows[0][0] > 0)
             {
                 int rol = (int)ds.Tables[1].Rows[0][0];
@@ -55,7 +56,7 @@ namespace ProyectoMatricula
 
                         break;
                 }
-                this.Close();
+                this.Hide();
             }
             else
             {
@@ -67,6 +68,19 @@ namespace ProyectoMatricula
         {
             Form f = new CreacionUsuario();
             f.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
         }
     }
 }

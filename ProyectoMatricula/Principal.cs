@@ -245,5 +245,15 @@ namespace ProyectoMatricula
         {
             agregarFormaInterna(new GestionUsuarios(lblUser.Text));
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            agregarFormaInterna(new ListaErrores());
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            agregarFormaInterna(new AsignarRoles());
+        }
     }
 }

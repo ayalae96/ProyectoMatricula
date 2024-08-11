@@ -55,7 +55,7 @@ namespace ProyectoMatricula
         private void button1_Click(object sender, EventArgs e)
         {
             DataSet ds = null;
-            if (tbBusqueda.Text.Length > 3)
+            if (tbBusqueda.Text.Length > 2)
             {
                 if (rbCedula.Checked)
                 {

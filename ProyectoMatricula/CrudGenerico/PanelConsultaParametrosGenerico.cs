@@ -1,4 +1,5 @@
-﻿using ProyectoMatricula.CrudGenerico;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using ProyectoMatricula.CrudGenerico;
 using ProyectoMatricula.UtilidadesSQL;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +16,7 @@ namespace ProyectoMatricula
 {
     public class PanelConsultaParametrosGenerico : TableLayoutPanel
     {
-        DataSet datosLlenado;
+        public DataSet datosLlenado;
         int campos;
         public int columnasCampos;
         public int filasCampos;
@@ -24,25 +26,40 @@ namespace ProyectoMatricula
         private string id;
         TableLayoutPanel pnlTRX;
         TableLayoutPanel pnlBotones;
-        
+        string tabla;
+        List<Label> lstLabel;
+        List<string> lstForaneos;
         /// <summary>
         /// Generara un panel con todos los datos y controles de una tabla
         /// </summary>
         /// <param name="tabla">Nombre de la tabla a consultar</param>
         public PanelConsultaParametrosGenerico(string tabla)
         {
-
+            this.tabla = tabla;
             inicializarControl(tabla);
             establecerModoConsulta(ModoConsultaPanelGenerico.Crear);
             this.Refresh();
         }
+        public PanelConsultaParametrosGenerico(string tabla, List<string> lstForaneos)
+        {
+            this.lstForaneos = lstForaneos;
+            this.tabla = tabla;
+            inicializarControl(tabla);
+            establecerModoConsulta(ModoConsultaPanelGenerico.Crear);
+            this.Refresh();
+            darDatoForaneo(this.lstForaneos);
+            this.Refresh();
+        }
+        //LLENAR TODO
         public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo, string id)
         {
+            this.tabla = tabla;
             this.id = id;
             inicializarControl(tabla);
             establecerModoConsulta(modo);
             this.Refresh();
         }
+        //PARA LLENAR SOLO CIERTAS COLUMNAS
         public PanelConsultaParametrosGenerico(string tabla, ModoConsultaPanelGenerico modo, string id, List<string> lstColumnas)
         {
             this.id = id;
@@ -51,37 +68,277 @@ namespace ProyectoMatricula
             this.Refresh();
             this.lstColumnas = lstColumnas;
         }
-        public Button generarBotonFormato(string nombre, Color color)
+
+        public void darDatoForaneo(List<string> lstForaneos)
+        {
+            int pos = -1;
+            string nombreColumna="";
+            for(int i = 0; i < datosLlenado.Tables[1].Rows.Count; i++)
+            {
+                //MessageBox.Show(datosLlenado.Tables[1].Rows[i][2].ToString() +" TABLA "+ tablaForanea);
+                if (string.Compare(datosLlenado.Tables[1].Rows[i][2].ToString(), lstForaneos[0]) == 0)
+                {
+                    nombreColumna = datosLlenado.Tables[1].Rows[i][1].ToString();
+                    break;
+                }
+            }
+            for (int i = 0; i < datosLlenado.Tables[2].Rows.Count; i++)
+            {
+                //MessageBox.Show(datosLlenado.Tables[2].Rows[i][0].ToString() + " COLUMNA " + nombreColumna);
+
+                if (string.Compare(datosLlenado.Tables[2].Rows[i][0].ToString(), nombreColumna) == 0)
+                {
+                    pos = i;
+                    break;
+                }
+            }
+
+
+            if (pos < 0)
+            {
+                MessageBox.Show("No se encontro dato foraneo...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                //if(lstCampos[pos] is ComboBox) MessageBox.Show("" + ((ComboBox)lstCampos[pos]).Items.Count);
+                ComboBox c = ((ComboBox)lstCampos[pos]);
+                c.SelectedItem = c.Items[obtenerComboValor(lstForaneos[0], c)];
+                lstCampos[pos].Enabled = false;
+            }
+        }
+        public CheckBox generarCheck(string nombre)
+        {
+            CheckBox checkBox = new CheckBox();
+            checkBox.Text = nombre;
+            checkBox.Size = TextRenderer.MeasureText(checkBox.Text, new Font("Arial", 11));
+            checkBox.Margin = new Padding(2, 6, 0, 0);
+            checkBox.FlatStyle = FlatStyle.Flat;
+            //checkBox.CheckedChanged += CheckBox_CheckedChanged;
+            return checkBox;
+        }
+
+        private void Quemar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sender is CheckBox)
+            {
+                CheckBox obj = (CheckBox)sender;
+                if (obj.Checked == true)
+                {
+                    quemarCampos();
+                    
+                }
+                else
+                {
+                    activarCampos();
+                }
+                foreach(Control c in lstBotones)
+                {
+                    if(string.Compare(c.Text,"Actualizar") == 0)
+                    {
+                        c.Enabled = !c.Enabled;
+                    }
+                }
+            }
+        }
+
+        
+
+        public Button generarBotonFormato(string nombre, Color color, bool estado)
         {
             Button boton = new Button();
             boton.Text = nombre;
             boton.FlatStyle = FlatStyle.Flat;
             if(color != null) boton.BackColor = color;
             boton.Size = new Size(80, 23);
+            boton.Enabled = estado;
+            boton.Click += Boton_Click;
             return boton;
         }
+
+        private void Boton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button )sender;
+            if (string.Compare(b.Text, "Crear") == 0)
+            {
+                crearElemento();
+            }
+            else if(string.Compare(b.Text, "Actualizar") == 0)
+            {
+                actualizarElemento();
+            }
+            else if (string.Compare(b.Text, "Eliminar") == 0)
+            {
+
+            }
+        }
+        public void actualizarElemento()
+        {
+            bool valorVacio = false;
+            string cadena = "";
+            for (int i = 1; i < lstCampos.Count; i++)
+            {
+
+                if (lstCampos[i] is TextBox)
+                {
+                    if (String.IsNullOrEmpty(lstCampos[i].Text.Trim()))
+                    {
+                        MessageBox.Show("Campo *" + datosLlenado.Tables[2].Rows[i][0].ToString()
+                            + "* esta vacio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lstCampos[i].Focus();
+                        valorVacio = true;
+                        break;
+                    }
+                    cadena = cadena + valorarCampoElementoU(i, lstCampos[i].Text);
+                }
+                else if (lstCampos[i] is ComboBox)
+                {
+                    string str = lstCampos[i].Text.Substring(0, lstCampos[i].Text.IndexOf("|")).Trim();
+                    cadena = cadena + valorarCampoElementoU(i, str);
+                }
+                else if (lstCampos[i] is DateTimePicker)
+                {
+                    cadena = cadena + datosLlenado.Tables[2].Rows[i][0].ToString() +" = '" + lstCampos[i].Text.ToString() + "'" + (i < campos ? ", " : "");
+                }
+            }
+            if (valorVacio)
+            {
+                MessageBox.Show("No se procedera con la transaccion...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                TipoDato tipoDato;
+                if (string.Compare(datosLlenado.Tables[2].Rows[0][2].ToString(), "int") == 0)
+                    tipoDato = TipoDato.Int;
+                else
+                    tipoDato = TipoDato.String;
+                new ConsultaGenericaSQL().spActualizarDatoGenerico(tabla, id, cadena, tipoDato, datosLlenado.Tables[2].Rows[0][0].ToString());
+                //MessageBox.Show(cadena);
+            }
+            System.Console.WriteLine(cadena);
+            //spInsertarNuevoElemento(cadena)
+        }
+        public string valorarCampoElementoU(int i, string campo)
+        {
+            string cadena = "";
+
+            string tipo = (string)datosLlenado.Tables[2].Rows[i][2];
+            if (string.Compare(tipo, "int") == 0)
+            {
+                cadena = datosLlenado.Tables[2].Rows[i][0].ToString() + " = " + campo.Trim();
+            }
+            else
+            if (string.Compare(tipo, "nvarchar") == 0 ||
+                string.Compare(tipo, "varchar") == 0 ||
+                string.Compare(tipo, "nchar") == 0)
+            {
+                cadena = datosLlenado.Tables[2].Rows[i][0].ToString() + " = '" + campo.Trim() + "'";
+            }
+            if (i < campos - 1) cadena = cadena + ", ";
+            return cadena;
+        }
+
+        public void crearElemento()
+        {
+            bool valorVacio = false;
+            string cadena = "";
+            for(int i = 1; i < lstCampos.Count; i++)
+            {
+
+                if (lstCampos[i] is TextBox)
+                {
+                    if (String.IsNullOrEmpty(lstCampos[i].Text.Trim()))
+                    {
+                        MessageBox.Show("Campo *" + datosLlenado.Tables[2].Rows[i][0].ToString()
+                            + "* esta vacio.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lstCampos[i].Focus();
+                        valorVacio = true;
+                        break;
+                    }
+                    cadena = cadena + valorarCampoElemento(i, lstCampos[i].Text);
+                }else if (lstCampos[i] is ComboBox)
+                {
+                    string str = lstCampos[i].Text.Substring(0,lstCampos[i].Text.IndexOf("|")).Trim();
+                    cadena = cadena + valorarCampoElemento(i, str);
+                }
+                else if (lstCampos[i] is DateTimePicker)
+                {
+                    cadena = cadena + "'" + lstCampos[i].Text.ToString()+ "'" + (i<campos ? ", " : "") ;
+                }
+            }
+            if (valorVacio)
+            {
+                MessageBox.Show("No se procedera con la transaccion...","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                new ConsultaGenericaSQL().spInsertarDatoGenerico(tabla, cadena);
+                //MessageBox.Show(cadena);
+            }
+            System.Console.WriteLine(cadena);
+            //spInsertarNuevoElemento(cadena)
+        }
+
+        public string valorarCampoElemento(int i, string campo)
+        {
+            string cadena = "";
+            
+            string tipo = (string)datosLlenado.Tables[2].Rows[i][2];
+            if (string.Compare(tipo, "int") == 0)
+            {
+                cadena = campo.Trim();
+            }
+            else
+            if (string.Compare(tipo, "nvarchar") == 0 || 
+                string.Compare(tipo, "varchar") == 0 ||
+                string.Compare(tipo, "nchar") == 0 )
+            {
+                cadena = "'" + campo.Trim() + "'";
+            }
+            if (i < campos-1) cadena = cadena + ", ";
+            return cadena; 
+        }
+
         public void establecerModoConsulta(ModoConsultaPanelGenerico modo)
         {
             lstBotones = new List<Control> ();  
             switch(modo)
             {
                 case ModoConsultaPanelGenerico.Crear:
+
+                    lstBotones.Add(generarBotonFormato("Crear", Color.DeepSkyBlue,true));
+                    CheckBox chActivar = generarCheck("Activar ID");
+                    chActivar.CheckedChanged += activarID_CheckedChanged;
+                    lstBotones.Add (chActivar);
                     MessageBox.Show("Ingrese los datos...");
-                    lstBotones.Add(generarBotonFormato("Crear", Color.DeepSkyBlue));
                     break;
                 case ModoConsultaPanelGenerico.Actualizar:
                     // llenar
                     llenarDatos();
+                    lstBotones.Add(generarBotonFormato("Actualizar", Color.DeepSkyBlue, true));
+                    chActivar = generarCheck("Activar ID");
+                    chActivar.CheckedChanged += activarID_CheckedChanged;
+                    lstBotones.Add(chActivar);
                     break;
                 case ModoConsultaPanelGenerico.Leer:
                     // llenar y quemar
                     llenarDatos();
                     quemarCampos();
+                    lstBotones.Add(generarBotonFormato("Actualizar", Color.DeepSkyBlue, false));
+                    chActivar = generarCheck("Activar ID");
+                    chActivar.CheckedChanged += activarID_CheckedChanged;
+                    lstBotones.Add(chActivar);
+                    CheckBox ch = new CheckBox();
+                    ch = generarCheck("Bloquear");
+                    ch.Checked = true;
+                    ch.CheckedChanged += Quemar_CheckedChanged;
+                    lstBotones.Add(ch);
+
                     break;
                 case ModoConsultaPanelGenerico.Eliminar:
                     // llenar y quemar
                     llenarDatos();
                     quemarCampos();
+                    lstBotones.Add(generarBotonFormato("Eliminar", Color.IndianRed, false));
                     break;
             }
             FlowLayoutPanel f = new FlowLayoutPanel();
@@ -93,6 +350,24 @@ namespace ProyectoMatricula
             //centrarControles(lstBotones, pnlBotones);
 
         }
+
+        private void activarID_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sender is CheckBox)
+            {
+                CheckBox obj = (CheckBox)sender;
+                if (obj.Checked == true)
+                {
+                    estadoID(true);
+                }
+                else
+                {
+                    estadoID(false);
+                }
+            }
+            //throw new NotImplementedException();
+        }
+
         public void quemarCampos()
         {
             foreach(Control c in lstCampos)
@@ -110,11 +385,57 @@ namespace ProyectoMatricula
 
         public void estadoID(bool estado)
         {
+            if (!lstCampos[0].Enabled)
+                MessageBox.Show("Modificar este campo podria generar errores... Uselo con cuidado");
             lstCampos[0].Enabled= estado;
         }
         public void llenarDatos()
         {
+            TipoDato tipoDato;
+            if (string.Compare(datosLlenado.Tables[2].Rows[0][2].ToString(),"int")==0)
+                tipoDato = TipoDato.Int;
+            else
+                tipoDato = TipoDato.String;
+            //MessageBox.Show(tipoDato.ToString());
+            DataSet ds = new ConsultaGenericaSQL()
+                    .spObtenerDatoGenerico(this.tabla, this.id, datosLlenado.Tables[2].Rows[0][0].ToString(),tipoDato);
+            darDatos(ds);
+        }
+        public void darDatos(DataSet ds)
+        {
+            for(int i = 0; i < lstCampos.Count; i++)
+            {
+                if (lstCampos[i] is TextBox)
+                {
+                    lstCampos[i].Text = ds.Tables[0].Rows[0][i].ToString();
 
+                }
+                if (lstCampos[i] is ComboBox)
+                {
+                    ComboBox c = lstCampos[i] as ComboBox;
+                    //c.DataSource = c.DataSource;
+                    //c.Refresh();
+                    //if (c == null) MessageBox.Show(c.SelectedIndex + ds.Tables[0].Rows[0][i].ToString());
+
+                    c.SelectedItem = c.Items[obtenerComboValor(ds.Tables[0].Rows[0][i].ToString(),c)];
+                   
+                }
+                if (lstCampos[i] is DateTimePicker)
+                {
+                    ((DateTimePicker)lstCampos[i]).Text = ds.Tables[0].Rows[0][i].ToString();
+                }
+            }
+        }
+
+        public int obtenerComboValor(string id, ComboBox c)
+        {
+            for(int i = 0; i<c.Items.Count;i++)
+            {
+                if (string.Compare(((DataRowView)c.Items[i])[0].ToString(),id)== 0){
+                    return i;
+                }
+            }
+            return 1;
         }
         public void inicializarControl(string tabla)
         {
@@ -126,7 +447,9 @@ namespace ProyectoMatricula
             }
             else
             {
-                obtenerDatosTabla(tabla, id);
+                obtenerDatosTabla(tabla);
+
+                //obtenerDatosTabla(tabla, id);
             }
             inicializarDatos();
         }
@@ -158,6 +481,7 @@ namespace ProyectoMatricula
             //Atributos referenciales
             if (lstColumnas == null) 
             {
+
                 campos = datosLlenado.Tables[0].Columns.Count; 
             } else 
             {
@@ -201,21 +525,13 @@ namespace ProyectoMatricula
             this.BackColor = Color.LightGray;
             this.Visible = true;
         }
-       public void centrarControles(List<Control> ctls, Control container)
-        {
-            int w = container.ClientSize.Width;
-            int marge = (w - ctls.Sum(x => x.Width)) / 2;
-            Padding oldM = ctls[0].Margin;
-            ctls.First().Margin = new Padding(marge, oldM.Top, oldM.Right, oldM.Bottom);
-            ctls.Last().Margin = new Padding(oldM.Left, oldM.Top, oldM.Right, marge);
-        }
         /// <summary>
         /// Insera los paneles internos de cada transaccion, y les asigna un control segun el tipo de dato.
         /// </summary>
         public void insertarPanelesInternos()
         {
             int contadorCampos = 0;
-            
+            this.lstLabel = new List<Label>();
             for (int x = 0; x < columnasCampos; x++)
             {
                 for (int y = 0; y < filasCampos && contadorCampos < campos ; y++)
@@ -331,21 +647,62 @@ namespace ProyectoMatricula
             Control c = new Control();
             for (int i = 0; i < datosLlenado.Tables[1].Rows.Count; i++)
             {
-                string nombreForaneo = (string) datosLlenado.Tables[1].Rows[0][i];
+                string nombreForaneo = (string) datosLlenado.Tables[1].Rows[i][1];
                 string tipoDato = (string)datosLlenado.Tables[2].Rows[contadorCampo][2];
-                if(string.Compare(nombreCampo, nombreForaneo,StringComparison.Ordinal) == 0)
+                //MessageBox.Show(nombreCampo + "-" + nombreForaneo);
+                if (string.Compare(nombreCampo, nombreForaneo,StringComparison.Ordinal) == 0)
                 {
-                    c = new ComboBox();
-                    c.Margin = padding;
+                    ComboBox cb = new ComboBox();
+                    DataSet comboDS = new ConsultaGenericaSQL().spLlenarComboBox((string)datosLlenado.Tables[1].Rows[i][2], nombreCampo);
+                    if (comboDS.Tables[0].Rows.Count > 0)
+                    {
+                        MessageBox.Show("hola");
+
+                        DataTable dt = comboDS.Tables[0];
+                        string columnas = "";
+                        int cols = comboDS.Tables[0].Columns.Count;
+                        for (int s = 0; s < cols; s++)
+                        {
+                            columnas = columnas + comboDS.Tables[0].Columns[s].ColumnName ;
+                            if(s<cols-2)
+                            {
+                                columnas = columnas + "+' | ' +";
+                            }
+                            else
+                            {
+                                if(s < cols - 1)
+                                {
+                                    columnas = columnas + "+' | ' +";  
+                                }
+                            }
+                        }
+                        //essageBox.Show(columnas);
+                        cb.DropDownWidth = TextRenderer.MeasureText(columnas, new Font("Arial", 7)).Width; ;
+
+                        dt.Columns.Add("FullName",
+                                        typeof(string),
+                                        columnas);
+                        //da.Fill(dt);
+                        cb.BindingContext = new BindingContext();
+                        BindingSource bindingSource = new BindingSource();
+                        bindingSource.DataSource = dt;
+                        cb.DataSource = bindingSource;
+                        cb.DisplayMember = "FullName";
+                        cb.ValueMember = (string)comboDS.Tables[0].Columns[1].ColumnName;
+                    }
+                    cb.Margin = padding;
+                    c = cb;
+                    break;
                 }
                 else if(string.Compare(tipoDato, "date", StringComparison.Ordinal) == 0)
                 {
                     DateTimePicker d = new DateTimePicker();
                     d.Format = DateTimePickerFormat.Custom;
-                    d.CustomFormat = "dd-MM-yyyy";
+                    d.CustomFormat = "yyyy-MM-dd";
                     d.Size = new Size(100, 20);
                     d.Margin = padding;
                     c = d;
+                    break;
                 }
                 else
                 {
@@ -354,9 +711,11 @@ namespace ProyectoMatricula
                     if (contadorCampo == 0) c.Enabled = false;
                 }
             }
+            lstCampos.Add(c);
             return c;
 
         }
+        
         /// <summary>
         /// Genera el label correspondiente
         /// </summary>
@@ -375,7 +734,7 @@ namespace ProyectoMatricula
                 l.Text = "*" + l.Text;
                 l.Font = new Font(l.Font, l.Font.Style & ~FontStyle.Bold);
             }
-
+            this.lstLabel.Add(l);
             return l;
         }
 

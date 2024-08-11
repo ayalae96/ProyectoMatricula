@@ -51,10 +51,13 @@ namespace ProyectoMatricula
                     switch (datoSQL.TipoDato)
                     {
                         case TipoDato.Int:
-                            sqlCmd.Parameters.AddWithValue("@" + datoSQL.VariableSQL, (int)datoSQL.VariableLocal);
+                            sqlCmd.Parameters.AddWithValue("@" + datoSQL.VariableSQL, Int32.Parse(datoSQL.VariableLocal.ToString()));
+                            //MessageBox.Show(Int32.Parse(datoSQL.VariableLocal.ToString()) + "");
                             break;
                         case TipoDato.String:
                             sqlCmd.Parameters.AddWithValue("@" + datoSQL.VariableSQL, (string)datoSQL.VariableLocal);
+                            //MessageBox.Show("@" + datoSQL.VariableSQL + (string)datoSQL.VariableLocal);
+
                             break;
                         case TipoDato.Decimal:
                             sqlCmd.Parameters.AddWithValue("@" + datoSQL.VariableSQL, (decimal)datoSQL.VariableLocal);
@@ -62,7 +65,7 @@ namespace ProyectoMatricula
                     }
                 }
             }
-            sqlCmd.ExecuteNonQuery();
+            //sqlCmd.ExecuteNonQuery(); Genera duplicados...
             da.SelectCommand = sqlCmd;
             da.Fill(ds);
             cerrar();
