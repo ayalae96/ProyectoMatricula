@@ -1,6 +1,6 @@
-﻿namespace ProyectoMatricula
+﻿namespace ProyectoMatricula.CrudGenerico
 {
-    partial class CreacionUsuario
+    partial class CreacionProfesor
     {
         /// <summary>
         /// Required designer variable.
@@ -55,8 +55,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(637, 284);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(502, 450);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
@@ -65,7 +65,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 5);
+            this.panel1.Size = new System.Drawing.Size(502, 5);
             this.panel1.TabIndex = 0;
             // 
             // pnlParametros
@@ -73,9 +73,8 @@
             this.pnlParametros.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlParametros.Location = new System.Drawing.Point(3, 43);
             this.pnlParametros.Name = "pnlParametros";
-            this.pnlParametros.Size = new System.Drawing.Size(631, 228);
+            this.pnlParametros.Size = new System.Drawing.Size(496, 394);
             this.pnlParametros.TabIndex = 3;
-            this.pnlParametros.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlParametros_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -89,7 +88,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(631, 29);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(496, 29);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // flowLayoutPanel1
@@ -98,9 +97,9 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(249, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(179, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(132, 23);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(138, 23);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -109,19 +108,19 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario Nuevo";
+            this.label1.Text = "Profesor Nuevo";
             // 
-            // CreacionUsuario
+            // CreacionProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 284);
+            this.ClientSize = new System.Drawing.Size(502, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "CreacionUsuario";
-            this.Text = "CreacionUsuario";
-            this.Load += new System.EventHandler(this.CreacionUsuario_Load);
+            this.Name = "CreacionProfesor";
+            this.Text = "CreacionProfesor";
+            this.Load += new System.EventHandler(this.CreacionProfesor_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

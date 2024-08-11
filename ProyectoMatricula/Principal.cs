@@ -19,6 +19,9 @@ namespace ProyectoMatricula
             4=DBA
          */
         public int tipoUsuario;
+        private bool clickAcademicoAlumno = false;
+        private bool clickAcademicoProfesor = false;
+
         public Principal()
         {
             InitializeComponent();
@@ -211,12 +214,20 @@ namespace ProyectoMatricula
 
         private void btnProfesor_Click(object sender, EventArgs e)
         {
+            clickAcademicoProfesor = !clickAcademicoProfesor;
             showSubMenu(panelSubProfesor);
+            int aumento = 82 * (clickAcademicoProfesor ? 1 : -1);
+            this.flAdministrativo.Size = new System.Drawing.Size(231, flAdministrativo.Size.Height + aumento);
+            
         }
 
         private void btnAlumno_Click(object sender, EventArgs e)
         {
+            clickAcademicoAlumno = !clickAcademicoAlumno;
             showSubMenu(panelSubAlumno);
+            int aumento = 82 * (clickAcademicoAlumno ? 1 : -1);
+            this.flAdministrativo.Size = new System.Drawing.Size(231, flAdministrativo.Size.Height + aumento);
+
         }
 
         private void button8_Click(object sender, EventArgs e)

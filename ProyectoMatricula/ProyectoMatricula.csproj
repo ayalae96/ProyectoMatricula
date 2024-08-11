@@ -71,6 +71,12 @@
     <Compile Include="ConsultarPersonaExistente.Designer.cs">
       <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrudGenerico\CreacionProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudGenerico\CreacionProfesor.Designer.cs">
+      <DependentUpon>CreacionProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrudGenerico\CreacionUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarPersonaExistente.resx">
       <DependentUpon>ConsultarPersonaExistente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudGenerico\CreacionProfesor.resx">
+      <DependentUpon>CreacionProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudGenerico\CreacionUsuario.resx">
       <DependentUpon>CreacionUsuario.cs</DependentUpon>

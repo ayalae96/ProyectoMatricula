@@ -1,5 +1,4 @@
-﻿using ProyectoMatricula.UtilidadesSQL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,30 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoMatricula
+namespace ProyectoMatricula.CrudGenerico
 {
-    public partial class CreacionUsuario : Form
+    public partial class CreacionProfesor : Form
     {
         DataSet dsPersona;
-        public CreacionUsuario(DataSet ds)
+        public CreacionProfesor(DataSet ds)
         {
-            InitializeComponent();
             this.dsPersona = ds;
-
-            //this.pnlParametros.Controls.Add(new ConsultaGenericaParametro("Rol"));
+            InitializeComponent();
         }
-        public CreacionUsuario() 
+        public CreacionProfesor()
         {
             InitializeComponent();
-            //this.dsPersona = ds;
         }
 
-        private void CreacionUsuario_Load(object sender, EventArgs e)
+        private void CreacionProfesor_Load(object sender, EventArgs e)
         {
-            if(dsPersona != null)
+            if (dsPersona != null)
             {
-                PanelConsultaParametrosGenerico f = new PanelConsultaParametrosGenerico("Usuario");
-                List<string> lst= new List<string>();
+                PanelConsultaParametrosGenerico f = new PanelConsultaParametrosGenerico("Profesor");
+                List<string> lst = new List<string>();
                 lst.Add("Persona");
                 lst.Add(this.dsPersona.Tables[0].Rows[0][0].ToString());
                 f.darDatoForaneo(lst);
@@ -45,7 +41,7 @@ namespace ProyectoMatricula
             }
             else
             {
-                PanelConsultaParametrosGenerico f = new PanelConsultaParametrosGenerico("Usuario",CrudGenerico.ModoConsultaPanelGenerico.Leer,"5");
+                PanelConsultaParametrosGenerico f = new PanelConsultaParametrosGenerico("Usuario", CrudGenerico.ModoConsultaPanelGenerico.Leer, "5");
                 //f.darDatoForaneo("Persona", this.dsPersona.Tables[0].Rows[0][0].ToString());
                 this.pnlParametros.Controls.Add(f);
                 f.Dock = DockStyle.Fill;
@@ -54,18 +50,6 @@ namespace ProyectoMatricula
                 this.Size = new System.Drawing.Size(280 * f.columnasCampos, 120 + (35 * f.filasCampos));
                 Refresh();
             }
-
-        }
-
-        private void pnlParametros_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
-
 }
